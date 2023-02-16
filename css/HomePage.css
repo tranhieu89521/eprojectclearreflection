@@ -1,0 +1,201 @@
+.main-home-page .home-page-banner .slogan-left {
+    position: relative;
+}
+
+.main-home-page .home-page-banner .slogan {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 5em;
+}
+.main-home-page .home-page-banner .button-exlore {
+    color: #fff;
+    background: #404040;
+}
+
+.main-home-page .home-page-banner .button-exlore:hover {
+    color: #fff;
+    background: #000000;
+}
+
+.main-home-page .home-page-banner .slogan h4 {
+    font-weight: 600;
+    color: #fff;
+}
+.main-home-page .home-page-banner .slogan-left img {
+    height: 550px;
+}
+
+.main-home-page .home-page-banner .slogan h1 {
+    color: #fff;
+    font-weight: normal;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+}
+
+.home-introduce {
+    height: 580px;
+}
+
+.home-introduce {
+    background-image: url(/image/background-image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 560px;
+    position: relative;
+}
+
+.home-introduce .introduce-text {
+    padding-left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    position: absolute;
+}
+
+.home-introduce .introduce-text p {
+    width: 80%;
+}
+
+.home-introduce .introduce-text h1 {
+    color: #000;
+    font-weight: normal;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+}
+
+.home-introduce .introduce-text a {
+    padding: 14px 13px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    width: 7em;
+    height: 3.8em;
+    border-radius: 15px;
+    color: #fff;
+    background: #404040;
+}
+
+.home-introduce .introduce-text a:hover {
+    color: #fff;
+    background: #000000;
+}
+
+.description-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-body .text-description a {
+    font-weight: bold;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+}
+
+.button {
+    padding: 14px 13px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    width: 7em;
+    height: 3.8em;
+}
+
+.button-exlore {
+    color: #fff;
+    background: #404040;
+}
+
+.button-exlore:hover {
+    color: #fff;
+    background: #000000;
+}
+
+.home-content .card {
+    width: 33.3333333%;
+    transition: transform .5s ease;
+}
+
+.home-content .card:hover {
+    transform: scale(1.04);
+}
+
+.text-content-block h2 {
+    font-size: 28px;
+    font-family: "Crimson Text", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.heading {
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.heading::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e4;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+}
+
+.heading__heading-text {
+    font-size: 28px;
+    display: inline;
+    position: relative;
+    z-index: 1;
+    padding: 0 16px;
+    color: #404040;
+    font-style: normal;
+    font-family: "Crimson Text", serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    vertical-align: middle;
+}
+.plan img{
+    width: 100%;
+    height: 500px;
+}
+.plan .quote{
+    position: relative;
+}
+.plan .quote-text{
+    padding-left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    position: absolute;
+}
+.plan .quote-text h2{
+    font-weight: normal;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+}
+.plan .quote-text p{
+    width: 80%;
+}
+
+.feature .card {
+    width: 33.3333333%;
+}

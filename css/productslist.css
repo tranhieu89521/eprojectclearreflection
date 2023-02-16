@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@500 & display=swap');
+#wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+    font-family: 'open Sans', sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+                #wrapper  h3{
+                    font-size: 18px;
+                    color: #111;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    border: 1px solid #bebebe;
+                    display: inline-block;
+                    color:#555;
+                    font-weight: 600;
+                }
+                
+                #wrapper .headline{
+                    text-align: center;
+                    margin: 40px 40px;
+                }
+                
+                #wrapper ul.products{
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                #wrapper ul.products li{
+                    flex-basis: 25%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    box-sizing: border-box;
+                    margin-bottom: 100px;
+                }
+                #wrapper ul.products li img{
+                    max-width: 100%;
+                    height:auto;
+                }
+                #wrapper  .imageChange {
+                    max-width: 400px;
+                    height: auto;
+                }
+                #wrapper ul.products li .product-top{
+                    position: relative;
+                    overflow: hidden;
+                }
+                #wrapper ul.products li .product-top .product-thumb{
+                    display: block;
+                }
+                #wrapper ul.products li:hover .product-top .product-thumb img{
+                    filter: opacity(80%);
+                }
+                #wrapper ul.products li .product-top .product-thumb img{
+                    display: block;
+                    width:300px;
+                    height:320px;
+                }
+                #wrapper  ul.products li .product-top a.buy-now{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-align: center;
+                    display: block;
+                    background-color: #446084;
+                    color: #fff;
+                    padding: 10px 0px;
+                    position: absolute;
+                    bottom: -36px;
+                    width: 100%;
+                    transition: 0.25s ease-in-out;
+                    opacity: 0.85;
+                }
+                #wrapper  ul.products li:hover a.buy-now{
+                    bottom: 0px;
+    
+                }
+                #wrapper  ul.products li .product-introduce a{
+                    display:block;
+                    text-decoration: none;
+                }
+                #wrapper  ul.products li .product-introduce a.product-name{
+                    color:#334862;
+                    padding: 3px 0px;
+                }
+                #wrapper  ul.products li .product-introduce a.product-price{
+                    color: #111;
+                    padding: 2px 0px;
+                    font-weight: 600;
+                }
