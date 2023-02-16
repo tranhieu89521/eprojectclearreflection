@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-*{
-    margin: 0 auto;
-    padding: 0 auto;
-    box-sizing: border-box;
-    font-family: 'Quicksand',sans-serif;
-}
 
 .container{
     align-items: center;
 }
 .header{
     display: flex;
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
 }
 .header .navbar{
     padding: 20px 0;
@@ -221,12 +219,15 @@
 }
 /* Footer */
 .footer{
-    padding: 50px 0 75px ;
+    padding: 50px 0 0 75px;
     background: #2457aa;
 }
 .footer .container{
     display: flex;
     align-items: flex-start;
+}
+.footer .footer-item{
+    margin-right: 150px;
 }
 .footer h3{
     color: #ffd200;
