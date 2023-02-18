@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-
-.container{
-    align-items: center;
-}
 .header{
     display: flex;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
-    font-family: 'Quicksand',sans-serif;
 }
 .header .navbar{
     padding: 20px 0;
-    background: #2457aa;
-    color: #fff;
+    background: var(--backgroundNavbar);
+    color: var(--white);
     width: 100%;
     position: fixed;
     font-family: '';
     z-index: 999;
+}
+.navbar .menu-right{
+    display: flex;
 }
 .navbar .logo{
     margin-left: 0;
@@ -25,8 +22,6 @@
 .navbar .logo h2{
     letter-spacing: 3px;
     padding: 0 3px;
-    font-size: 35px;
-    background: linear-gradient(to right, #8360c3, #2ebf91);
 }
 .navbar .menu ul{
     list-style-type: none;
@@ -41,7 +36,7 @@
     cursor: pointer;
 }
 .menu ul.main-menu li.item-menu a{
-    color: rgba(255,255,255,.8);
+    color: var(--textColor);
     text-decoration: none;
     /* padding: 5px 15px; */
     font-size: 1em;
@@ -54,7 +49,7 @@
     z-index: 999;
     top: 50px;
     padding-left: 0;
-    background: #fff;
+    background: var(--white);
     width: 280px;
     box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
     transition: all 0.3s;
@@ -67,7 +62,7 @@
     border-bottom: none;
 }
 .sub-menu a{
-    color: #777 !important;
+    color: var(--textColor) !important;
     font-size: 1em;
     transition: all 0.3s;
 }
@@ -75,7 +70,7 @@
     color: black !important;
 }
 .menu ul li.item-menu:hover a{
-    color: #fff;
+    color: var(--black);
 }
 .menu ul li:hover ul.sub-menu{
     display: block;
@@ -86,32 +81,36 @@
 .menu ul li:hover i{
     transform: rotate(180deg);
 }
-.navbar .search-area{
-    margin-right: 0;
+.navbar .search{
+    margin-top: 2%;
+    position: relative;
+    display: flex;
 }
-.navbar .search-area input{
+.navbar .search .searchTerm{
     border: 0px solid #ddd;
     box-shadow: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 40px;
+    height: 36px;
     padding: 0 10px;
 }
-.navbar .search-area input:focus{
+.navbar .search .searchTerm:focus{
     box-shadow: 0 0 5px #ccc;
     opacity: 1 !important;
     outline: none;
-    color: #333;
-    background-color: #fff;
+    color: var(--textColor);
+    background-color: var(--white);
 }
-.search-area button{
-    background: #ffd200;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 40px;
-    border: none;
+.navbar .search .searchButton{
+    width: 40px;
+    height: 36px;
+    border: 1px solid var(--white);
+    background: var(--white);
+    text-align: center;
+    color: var(--textColor);
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
-    padding: 0 13px;
+    font-size: 20px;
 }
 .navbar .btns{
     margin-right: 0;
@@ -119,11 +118,11 @@
 .navbar .btns a{
     margin-left: 10px;
     text-decoration: none;
-    color: rgba(255,255,255,.8);
+    color: var(--textColor);
     transition: all .3s;
 }
 .navbar .btns a:hover{
-    color: #fff;
+    color: var(--white);
 }
 .navbar .btns i{
     font-size: 18px;
@@ -203,7 +202,7 @@
 .owl-dot span{
     background: #d5d5d5 !important;
     border-radius: 2px !important;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     /* width: 50px; */
     padding: 0 30px;
     height: 5px !important;
@@ -220,7 +219,7 @@
 /* Footer */
 .footer{
     padding: 50px 0 0 75px;
-    background: #2457aa;
+    background: var(--backgroundNavbar);
 }
 .footer .container{
     display: flex;
@@ -230,15 +229,16 @@
     margin-right: 150px;
 }
 .footer h3{
-    color: #ffd200;
-    font-size: 16px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
 }
 .footer ul{
     padding-left: 0;
     margin-top: 10px;
 }
 .footer li{
-    color: #f1f1f1d3;
+    color: var(--black);
     list-style: none;
     padding: 5px 0;
 }
@@ -247,10 +247,10 @@
 }
 .footer li a{
     text-decoration: none;
-    color: #f1f1f1d3;
+    color: var(--textColor);
 }
 .footer li a:hover{
-    color: #fff;
+    color: var(--black);
 }
 .footer .social a {
     display: inline-block;
@@ -260,13 +260,13 @@
     padding: 6px 0;
     text-align: center;
     font-size: 18px;
-    color: #f1f1f1d3;
-    border: 1px solid #f1f1f1d3;
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
     border-radius: 4px;
     transition: all .3s;
 }
 
 .footer .social a:hover {
-    color: #fff;
-    border-color: #fff;
+    color: var(--black);
+    border-color: var(--black);
 }
