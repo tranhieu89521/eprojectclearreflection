@@ -18,47 +18,57 @@
 <body>
     <!-- home page -->
     <div class="header">
-        <div class="navbar">
-            <div class="container header-navbar">
-                <div class="logo">
+        <!-- test nav-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
                     <img src="/image/logo/png/logo-color.png" alt="">
-                </div>
-                <div class="menu-right">
-                    <div class="menu">
-                        <ul class="main-menu">
-                            <li class="item-menu"><a href="Index.html">Home</a></li>
-                            <li class="item-menu"><a href="">Room Mirror <i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="Produtcts-List.html">Drawing/Living room mirrors</a></li>
-                                    <li><a href="Produtcts-List.html">Bathroom mirrors</a></li>
-                                    <li><a href="Produtcts-List.html">Dressing mirrors</a></li>
-                                    <li><a href="Produtcts-List.html">Bedroom mirrors</a></li>
-                                </ul>
-                            </li>
-                            <li class="item-menu"><a href="">Material<i class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="Produtcts-List.html">Wooden framed</a></li>
-                                    <li><a href="Produtcts-List.html">Acrylic bordered</a></li>
-                                    <li><a href="Produtcts-List.html">Metal bordered</a></li>
-                                    <li><a href="Produtcts-List.html">Decorative mirrors</a></li>
-                                    <li><a href="Produtcts-List.html">LED mirrors</a></li>
-                                    <li><a href="Produtcts-List.html">Bluetooth mirrors</a></li>
-                                </ul>
-                            </li>
-                            <li class="item-menu"><a href="Contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link item-menu active" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="Produtcts-List.html">Drawing/Living room mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Bathroom mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Dressing mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Bedroom mirrors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="Produtcts-List.html">Wooden framed</a></li>
+                                <li><a href="Produtcts-List.html">Acrylic bordered</a></li>
+                                <li><a href="Produtcts-List.html">Metal bordered</a></li>
+                                <li><a href="Produtcts-List.html">Decorative mirrors</a></li>
+                                <li><a href="Produtcts-List.html">LED mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Bluetooth mirrors</a></li>
+                            </ul>
+                        </li>
+                        <li class="item-menu"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                    </ul>
                     <div class="search">
-                        <input type="text" class="searchTerm" placeholder="What are you search for?">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
+                        <form class="d-flex" role="search">
+                            <input type="search" class="searchTerm" placeholder="What are you search for?">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
                     </div>
+
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
-    <p><span><br><br></span></p>
     <p><span><br><br></span></p>
     <!-- banner section -->
     <div class="home-page-banner m-3">
@@ -111,8 +121,8 @@
     </div>
     <!-- end banner section -->
 
-    <div class="content">
-        <div class="container">
+    <div class="container">
+        <div class="content">
             <!-- introduction -->
             <div class="home-introduce m-3">
                 <div class="row">
@@ -393,6 +403,7 @@
             </div>
         </div>
     </div>
+
     <div class="footer">
         <div class="container">
             <div class="contact footer-item">

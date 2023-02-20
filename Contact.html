@@ -17,15 +17,22 @@
 
 <body>
   <div class="header">
-    <div class="navbar">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="logo">
-          <h2>Clear Reflections</h2>
-        </div>
-        <div class="menu">
-          <ul class="main-menu">
-            <li class="item-menu"><a href="Index.html">Home</a></li>
-            <li class="item-menu"><a href="">Room Mirror <i class="fas fa-caret-down"></i></a>
+        <a class="navbar-brand" href="#">
+          <img src="/image/logo/png/logo-color.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link item-menu active" aria-current="page" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
               <ul class="sub-menu">
                 <li><a href="Produtcts-List.html">Drawing/Living room mirrors</a></li>
                 <li><a href="Produtcts-List.html">Bathroom mirrors</a></li>
@@ -33,7 +40,8 @@
                 <li><a href="Produtcts-List.html">Bedroom mirrors</a></li>
               </ul>
             </li>
-            <li class="item-menu"><a href="">Material<i class="fas fa-caret-down"></i></a>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
               <ul class="sub-menu">
                 <li><a href="Produtcts-List.html">Wooden framed</a></li>
                 <li><a href="Produtcts-List.html">Acrylic bordered</a></li>
@@ -43,11 +51,20 @@
                 <li><a href="Produtcts-List.html">Bluetooth mirrors</a></li>
               </ul>
             </li>
-            <li class="item-menu"><a href="Contact.html">Contact Us</a></li>
+            <li class="item-menu"><a class="nav-link" href="Contact.html">Contact Us</a></li>
           </ul>
+          <div class="search">
+            <form class="d-flex" role="search">
+              <input type="search" class="searchTerm" placeholder="What are you search for?">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+
         </div>
       </div>
-    </div>
+    </nav>
   </div>
   <p><span><br></span></p>
   <div class="content">
@@ -63,116 +80,125 @@
           </h3>
         </div>
         <div class="row mt-2">
-          <div class="col-sm col-2 m-1"> 
+          <div class="col-sm col-2 m-1">
           </div>
           <div class="col-sm col-4 m-1">
             <i class="fa fa-map-marker" style="width:30px"></i> 175 Tay Son street, Dong Da district, Hanoi, Vietnam<br>
             <i class="fa fa-phone" style="width:30px"></i> Phone: +84 382020858<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:info@aptech.vn">info@aptech.vn</a><br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: <a
+              href="mailto:info@aptech.vn">info@aptech.vn</a><br>
             <form action="" target="_blank">
-              <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" max-width="100px"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"
+                  max-width="100px"></p>
               <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-              <textarea type="text-area" id="message" name="Message" rows="3" cols="50" class="textarea" placeholder="Your message" required></textarea> <br>
-              <button type="submit" class="w3-button w3-green w3-third">Send a Message</button>
+              <textarea type="text-area" id="message" name="Message" rows="3" cols="50" class="textarea"
+                placeholder="Your message" required></textarea> <br>
+              <button type="submit" class="btn btn-primary">Send a Message</button>
             </form>
           </div>
           <div class="col-sm col-4 m-1">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6275662249514!2d105.82147255111198!3d21.00756119380739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7dbfbdcdbf%3A0x85d8837c4ab9ad4f!2zVHLGsOG7nW5nIMSQw6BvIFThuqFvIEzhuq1wIFRyw6xuaCBWacOqbiBRdeG7kWMgVOG6vyBIYW5vaS1BcHRlY2g!5e0!3m2!1svi!2s!4v1676781173921!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-           </iframe>
-           <p style="text-align: center;">
-            <a target="_blank" href="https://maps.google.com/maps?ll=21.007556,105.823667&z=16&t=m&hl=vi&gl=US&mapclient=embed&cid=9644603171866783055">Find the way to visit here
-            </a>
-          </p>
-        </div>
-        <div class="col-sm col-2 m-1"> 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6275662249514!2d105.82147255111198!3d21.00756119380739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7dbfbdcdbf%3A0x85d8837c4ab9ad4f!2zVHLGsOG7nW5nIMSQw6BvIFThuqFvIEzhuq1wIFRyw6xuaCBWacOqbiBRdeG7kWMgVOG6vyBIYW5vaS1BcHRlY2g!5e0!3m2!1svi!2s!4v1676781173921!5m2!1svi!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p style="text-align: center;">
+              <a target="_blank"
+                href="https://maps.google.com/maps?ll=21.007556,105.823667&z=16&t=m&hl=vi&gl=US&mapclient=embed&cid=9644603171866783055">Find
+                the way to visit here
+              </a>
+            </p>
+          </div>
+          <div class="col-sm col-2 m-1">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="footer">
-  <div class="container">
-    <div class="contact footer-item">
-      <h3>Contact</h3>
-      <ul>
-        <li><i class="fas fa-map-marker-alt"></i>abc</li>
-        <li><i class="fas fa-envelope"></i>email@example.com</li>
-        <li><i class="fas fa-phone"></i>+123-456-7890</li>
-      </ul>
-    </div>
-    <div class="social footer-item">
-      <h3>Follow Us</h3>
-      <a href=""><i class="fab fa-twitter"></i></a>
-      <a href=""><i class="fab fa-facebook-f"></i></a>
-      <a href=""><i class="fab fa-linkedin-in"></i></a>
-      <a href=""><i class="fab fa-instagram"></i></a>
-      <a href=""><i class="fab fa-youtube"></i></a>
+  <div class="footer">
+    <div class="container">
+      <div class="contact footer-item">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i>abc</li>
+          <li><i class="fas fa-envelope"></i>email@example.com</li>
+          <li><i class="fas fa-phone"></i>+123-456-7890</li>
+        </ul>
+      </div>
+      <div class="social footer-item">
+        <h3>Follow Us</h3>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
 
-    </div>
-    <div class="product footer-item">
-      <h3>Company Info</h3>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Condition</a></li>
-      </ul>
-    </div>
-    <div class="main-info footer-item">
-      <h3>Purchase Info</h3>
-      <ul>
-        <li><a href="#">Payment Policy</a></li>
-        <li><a href="#">Shipping Policy</a></li>
-        <li><a href="#">Return Policy</a></li>
-      </ul>
+      </div>
+      <div class="product footer-item">
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+      <div class="main-info footer-item">
+        <h3>Purchase Info</h3>
+        <ul>
+          <li><a href="#">Payment Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
-<script>
-// Script to open and close sidebar when on tablets and phones
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  <script>
+    // Script to open and close sidebar when on tablets and phones
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-  }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-// Slideshow Apartment Images
-  var slideIndex = 1;
-  showDivs(slideIndex);
+    // Slideshow Apartment Images
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
 
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
 
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-        }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-opacity-off";
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-    </script>
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+  </script>
 
-  </body>
-  </html>
+</body>
+
+</html>

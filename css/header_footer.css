@@ -1,17 +1,11 @@
 .header{
-    display: flex;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
 }
 .header .navbar{
-    padding: 20px 0;
     background: var(--backgroundNavbar);
     color: var(--white);
-    width: 100%;
-    position: fixed;
-    font-family: '';
-    z-index: 999;
 }
 .navbar .menu-right{
     display: flex;
@@ -82,7 +76,6 @@
     transform: rotate(180deg);
 }
 .navbar .search{
-    margin-top: 2%;
     position: relative;
     display: flex;
 }
