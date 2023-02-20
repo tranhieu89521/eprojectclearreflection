@@ -1,10 +1,8 @@
 #wrapper{
-    max-width: 1200px;
-    margin:0 auto;
     color: #111;
     line-height: 1.15;
 }
-#wrapper  h3{
+.content h3{
     font-size: 18px;
     color: #111;
     padding: 10px 20px;
@@ -15,11 +13,18 @@
     font-weight: 600;
 }
 
-#wrapper .headline{
+.headline{
     text-align: center;
     margin: 40px 40px;
 }
+.title-filter h4{
+    font-family: "Galada", sans-serif;
+    font-weight: 500;
 
+}
+.title-filter span{
+    font-weight: bold;
+}
 #wrapper ul.products{
     list-style: none;
     display: flex;

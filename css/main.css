@@ -51,6 +51,7 @@ p {
 }
 a{
     text-decoration: none;
+    color: var(--textColor);
 }
 ul, ol, dl, blockquote, p, address, hr, table, fieldset, figure, pre, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 18px;

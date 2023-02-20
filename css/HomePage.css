@@ -1,3 +1,16 @@
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
 .home-page-banner .slogan-left {
     position: relative;
 }
@@ -158,7 +171,43 @@
     transform: translateY(-50%);
     content: '';
 }
+.arrow-seemore{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.arrow-seemore .arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+    cursor: pointer;
+    background-color: var(--backgroundContent);
+}
+.arrow-seemore .arrow span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid var(--textColor);
+    border-right: 5px solid var(--textColor);
+    transform: rotate(45deg);
+    margin: -10px;
 
+}
+.arrow-seemore .arrow span:nth-child(1) {
+    opacity: .3;
+}
+
+.arrow-seemore .arrow span:nth-child(2) {
+    opacity: .7;
+    animation-delay: -0.2s;
+}
+
+.arrow-seemore .arrow span:nth-child(3) {
+    opacity: 1;
+    animation-delay: -0.4s;
+}
 .heading__heading-text {
     font-size: 30px;
     display: inline;
