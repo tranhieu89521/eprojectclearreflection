@@ -211,15 +211,8 @@
 }
 /* Footer */
 .footer{
-    padding: 50px 0 0 75px;
+    padding: 50px;
     background: var(--backgroundNavbar);
-}
-.footer .container{
-    display: flex;
-    align-items: flex-start;
-}
-.footer .footer-item{
-    margin-right: 150px;
 }
 .footer h3{
     color: var(--black);
