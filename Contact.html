@@ -29,40 +29,87 @@
         <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
           <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link item-menu active" aria-current="page" href="Index.html">Home</a>
+              <a class="nav-link item-menu active" aria-current="page" href="Index.html">Home</a>
             </li>
             <li class="nav-item item-menu">
-                <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
-                <ul class="sub-menu">
-                    <li><a href="Produtcts-List.html?category=Living&cattype=types">Drawing/Living room mirrors</a></li>
-                    <li><a href="Produtcts-List.html?category=Bathroom&cattype=types">Bathroom mirrors</a></li>
-                    <li><a href="Produtcts-List.html">Dressing mirrors</a></li>
-                    <li><a href="Produtcts-List.html">Bedroom mirrors</a></li>
-                </ul>
+              <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="Produtcts-List.html?category=Living&cattype=types">Drawing/Living room
+                    mirrors</a></li>
+                <li><a href="Produtcts-List.html?category=Bathroom&cattype=types">Bathroom mirrors</a>
+                </li>
+                <li><a href="Produtcts-List.html">Dressing mirrors</a></li>
+                <li><a href="Produtcts-List.html">Bedroom mirrors</a></li>
+                <li class="add-category">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#createCategory">
+                    <i class="fa fa-plus-circle"></i> Add category
+                  </button>
+                </li>
+              </ul>
             </li>
             <li class="nav-item item-menu">
-                <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
-                <ul class="sub-menu">
-                    <li><a href="Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a></li>
-                    <li><a href="Produtcts-List.html?category=Acrylic&cattype=material">Acrylic bordered</a></li>
-                    <li><a href="Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a></li>
-                    <li><a href="Produtcts-List.html?category=Decorative&cattype=material">Decorative mirrors</a></li>
-                    <li><a href="Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
-                    <li><a href="Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth mirrors</a></li>
-                </ul>
+              <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a>
+                </li>
+                <li><a href="Produtcts-List.html?category=Acrylic&cattype=material">Acrylic bordered</a>
+                </li>
+                <li><a href="Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a>
+                </li>
+                <li><a href="Produtcts-List.html?category=Decorative&cattype=material">Decorative
+                    mirrors</a></li>
+                <li><a href="Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
+                <li><a href="Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth
+                    mirrors</a></li>
+                <li class="add-category">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#createCategory">
+                    <i class="fa fa-plus-circle"></i> Add category
+                  </button>
+                </li>
+              </ul>
             </li>
             <li class="item-menu"><a class="nav-link" href="Contact.html">Contact Us</a></li>
-        </ul>
-        <div class="search">
+          </ul>
+          <div class="search">
             <form action="./Produtcts-List.html" method="get" class="d-flex" role="search">
-                <input type="hidden" name="cattype" value="search">
-                <input type="search" class="searchTerm" name="search" placeholder="What are you search for?">
-                <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                </button>
+              <input type="hidden" name="cattype" value="search">
+              <input type="search" class="searchTerm" name="search" placeholder="What are you search for?">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
             </form>
-        </div>
-
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="createCategory" tabindex="-1" aria-labelledby="createCateLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="createCateLabel">Create category</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="category-name" class="col-form-label">Name:</label>
+                      <input type="text" class="form-control" id="category-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="description-text" class="col-form-label">Description:</label>
+                      <textarea class="form-control" id="description-text"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <i><span class="badge text-bg-danger">Warning</span>: Names and information
+                        generated are subject to <a href="#"> our community standards.</a></i>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Create your category</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
