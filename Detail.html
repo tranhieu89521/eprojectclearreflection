@@ -2,68 +2,99 @@
 <html lang="en">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clear Refle</title>
+    <title>Clear Reflections</title>
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/HomePage.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 
     <style type="text/css">
       .ta-display-container{
         position: relative;
       }
       .ta-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
-      .ta-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+      .ta-black,.ta-hover-black:hover{color:#fff!important;background-color:#000!important}
+	  .ta-container:after,.ta-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.ta-row-padding:after,.ta-row-padding:before
+	  .ta-row-padding,.ta-row-padding>.w3-half,.ta-row-padding>.w3-third,.ta-row-padding>.w3-twothird,.ta-row-padding>.w3-threequarter,.ta-row-padding>.w3-quarter,.ta-row-padding>.w3-col{padding:0 8px}
+	  .ta-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
     </style>
 </head>
+ <!-- home page -->
+    <div class="header">
+        <!-- test nav-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/image/logo/png/logo-color.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link item-menu active" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="Produtcts-List.html">Drawing/Living room mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Bathroom mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Dressing mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Bedroom mirrors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="Produtcts-List.html">Wooden framed</a></li>
+                                <li><a href="Produtcts-List.html">Acrylic bordered</a></li>
+                                <li><a href="Produtcts-List.html">Metal bordered</a></li>
+                                <li><a href="Produtcts-List.html">Decorative mirrors</a></li>
+                                <li><a href="Produtcts-List.html">LED mirrors</a></li>
+                                <li><a href="Produtcts-List.html">Bluetooth mirrors</a></li>
+                            </ul>
+                        </li>
+                        <li class="item-menu"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="search">
+                        <form class="d-flex" role="search">
+                            <input type="search" class="searchTerm" placeholder="What are you search for?">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
 
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
-  <div class="container display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
-    <h3>Rental</h3>
-    <h3>from $99</h3>
-    <h6>per night</h6>
-    <hr>
-    <form action="/action_page.php" target="_blank">
-      <p><label><i class="fa fa-mirror"></i> Quantity</label></p>
-      <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">              
-      <p><button class="w3-button w3-block w3-green w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
-    </form>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
-  </div>
-</nav>
 
 
-
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <span class="w3-bar-item">Rental</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-white" style="margin-left:260px">
+<div class="w3-main w3-white" style="margin-right:25%">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:80px"></div>
 
   <!-- Slideshow Header -->
   <div class="ta-container" id="apartment">
-    <h2 class="w3-text-green">The Apartment</h2>
+    <h2 style="color: green;">The Apartment</h2>
     <div class="ta-display-container mySlides">
-    <img src="./image/MW18283S.jpg">
+    <img src="./image/MW18283S.jpg" style="width:100%;margin-bottom:-6px">
       <div class="ta-display-bottomleft ta-black">
         <p>Living Room</p>
       </div>
@@ -75,48 +106,85 @@
       </div>
     </div>
   </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+  <div class="ta-row-padding ta-section row">
+    <div class="col-4">
+      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
     </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Second Living Room">
+    <div class="col-4">
+      <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Second Living Room">
+    </div>
+    <div class="col-4">
+      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
     </div>
   </div>
 
-  <div class="container">
-    <h4><strong>The space</strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-bath"></i> Bathrooms</p>
-        <p><i class="fa fa-fw fa-bed"></i> Bedrooms</p>
-      </div>
-    </div>
-    <hr>
     
-    <h4><strong>Amenities</strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-shower"></i> Shower</p>
-      </div>
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
-      </div>
-    </div>
-    <hr>
-    
-    <h4><strong>Extra Info</strong></h4>
+    <h4><strong>Description</strong></h4>
     <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
     <hr>
     
-    <h4><strong>Rules</strong></h4>
+    <h4><strong>User guide</strong></h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>Subscribe to receive updates on available dates and special offers.</p>
-    <p><button class="w3-button w3-green w3-third" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
+    <p></p>
+    <p><button>Buy</button></p>
+    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
   </div>
   <hr>
   
+
+    <h5>The related product</h5>
+  <div class="ta-row-padding ta-section row">
+    <div class="col-4">
+      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+    </div>
+    <div class="col-4">
+      <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Second Living Room">
+    </div>
+    <div class="col-4">
+      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+    </div>
+  </div>    
+  
+  
+  
+  
+     <div class="footer">
+        <div class="container">
+            <div class="contact footer-item">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>abc</li>
+                    <li><i class="fas fa-envelope"></i>email@example.com</li>
+                    <li><i class="fas fa-phone"></i>+123-456-7890</li>
+                </ul>
+            </div>
+            <div class="social footer-item">
+                <h3>Follow Us</h3>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+
+            </div>
+            <div class="product footer-item">
+                <h3>Company Info</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="main-info footer-item">
+                <h3>Purchase Info</h3>
+                <ul>
+                    <li><a href="#">Payment Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 <script>
 // Script to open and close sidebar when on tablets and phones
