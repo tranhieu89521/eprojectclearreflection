@@ -1,6 +1,7 @@
 import { listProducts } from "./dumpData.js";
 const query=window.location.search;
 const urlparam=new URLSearchParams(query);
+let products=[];
 let cattpye=urlparam.get('cattype');
 switch(cattpye){
     case 'types':
@@ -14,21 +15,7 @@ switch(cattpye){
                 }
             }
             if(check){
-                document.getElementById('products').innerHTML+='<li>'+
-                '<div class="product-item">'+
-                    '<div class="product-top">'+
-                        '<a href="./Detail.html?id='+listProducts[i].id+'" class="product-thumb">'+
-                            '<img src="'+listProducts[i].img+'" alt="" class="imageChange">'+
-                        '</a>'+
-                        '<a href="./Detail.html?id='+listProducts[i].id+'" class="buy-now">Buy now</a>'+
-                    '</div>'+
-                    '<div class="product-introduce">'+
-                        '<div class="product-price"><strong>'+listProducts[i].price.sale+' $</strong>&ensp;<del>'+listProducts[i].price.origin+' $</del></div>'+
-                        '<div><br></div>'+
-                        '<div class="product-name"><strong><a href="./Detail.html?id='+listProducts[i].id+'">'+listProducts[i].name+'</a></strong></div>'+
-                    '</div>'+
-                '</div>'+
-            '</li>';
+                products[products.length]=listProducts[i];
             }
         }
         break;
@@ -79,21 +66,7 @@ switch(cattpye){
                 }
             }
             if(check){
-                document.getElementById('products').innerHTML+='<li>'+
-                '<div class="product-item">'+
-                    '<div class="product-top">'+
-                        '<a href="./Detail.html?id='+listProducts[i].id+'" class="product-thumb">'+
-                            '<img src="'+listProducts[i].img+'" alt="" class="imageChange">'+
-                        '</a>'+
-                        '<a href="./Detail.html?id='+listProducts[i].id+'" class="buy-now">Buy now</a>'+
-                    '</div>'+
-                    '<div class="product-introduce">'+
-                        '<div class="product-price"><strong>'+listProducts[i].price.sale+' $</strong>&ensp;<del>'+listProducts[i].price.origin+' $</del></div>'+
-                        '<div><br></div>'+
-                        '<div class="product-name"><strong><a href="./Detail.html?id='+listProducts[i].id+'">'+listProducts[i].name+'</a></strong></div>'+
-                    '</div>'+
-                '</div>'+
-            '</li>';
+               products[products.length]=listProducts[i];
             }
         }
         break;
@@ -108,21 +81,7 @@ switch(cattpye){
                 }
             }
             if(check){
-                document.getElementById('products').innerHTML+='<li>'+
-                '<div class="product-item">'+
-                    '<div class="product-top">'+
-                        '<a href="./Detail.html?id='+listProducts[i].id+'" class="product-thumb">'+
-                            '<img src="'+listProducts[i].img+'" alt="" class="imageChange">'+
-                        '</a>'+
-                        '<a href="./Detail.html?id='+listProducts[i].id+'" class="buy-now">Buy now</a>'+
-                    '</div>'+
-                    '<div class="product-introduce">'+
-                        '<div class="product-price"><strong>'+listProducts[i].price.sale+' $</strong>&ensp;<del>'+listProducts[i].price.origin+' $</del></div>'+
-                        '<div><br></div>'+
-                        '<div class="product-name"><strong><a href="./Detail.html?id='+listProducts[i].id+'">'+listProducts[i].name+'</a></strong></div>'+
-                    '</div>'+
-                '</div>'+
-            '</li>';
+                products[products.length]=listProducts[i];
             }
         }
         break;
@@ -137,23 +96,29 @@ switch(cattpye){
                     }
                 }
                 if(check){
-                    document.getElementById('products').innerHTML+='<li>'+
-                    '<div class="product-item">'+
-                        '<div class="product-top">'+
-                            '<a href="./Detail.html?id='+listProducts[i].id+'" class="product-thumb">'+
-                                '<img src="'+listProducts[i].img+'" alt="" class="imageChange">'+
-                            '</a>'+
-                            '<a href="./Detail.html?id='+listProducts[i].id+'" class="buy-now">Buy now</a>'+
-                        '</div>'+
-                        '<div class="product-introduce">'+
-                            '<div class="product-price"><strong>'+listProducts[i].price.sale+' $</strong>&ensp;<del>'+listProducts[i].price.origin+' $</del></div>'+
-                            '<div><br></div>'+
-                            '<div class="product-name"><strong><a href="./Detail.html?id='+listProducts[i].id+'">'+listProducts[i].name+'</a></strong></div>'+
-                        '</div>'+
-                    '</div>'+
-                '</li>';
+                    products[products.length]=listProducts[i];
                 }
             }
-            break;    
-    default:
+            break; 
 }
+function loop(){
+    document.getElementById('products').innerHTML='';
+    for(var i=0;i<products.length;i++){
+        document.getElementById('products').innerHTML+='<li>'+
+        '<div class="product-item">'+
+            '<div class="product-top">'+
+                '<a href="./Detail.html?id='+products[i].id+'" class="product-thumb">'+
+                    '<img src="'+products[i].img+'" alt="" class="imageChange">'+
+                '</a>'+
+                '<a href="./Detail.html?id='+products[i].id+'" class="buy-now">Buy now</a>'+
+            '</div>'+
+            '<div class="product-introduce">'+
+                '<div class="product-price"><strong>'+products[i].price.sale+' $</strong>&ensp;<del>'+products[i].price.origin+' $</del></div>'+
+                '<div><br></div>'+
+                '<div class="product-name"><strong><a href="./Detail.html?id='+products[i].id+'">'+products[i].name+'</a></strong></div>'+
+            '</div>'+
+        '</div>'+
+    '</li>';
+    }
+}
+loop();
