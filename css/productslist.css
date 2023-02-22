@@ -83,9 +83,10 @@
     display:block;
     text-decoration: none;
 }
-#wrapper  ul.products li .product-introduce a.product-name{
-    color:#334862;
+#wrapper  ul.products li .product-introduce .product-name a{
     padding: 3px 0px;
+    color:rgb(165, 19, 19);
+    font-size: 18px;
 }
 #wrapper  ul.products li .product-introduce a.product-price{
     color: #111;
