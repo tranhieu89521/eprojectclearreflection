@@ -2,234 +2,466 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clear Reflections</title>
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/HomePage.css">
-    <link rel="stylesheet" href="./css/header_footer.css">
-    <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Reflections</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/HomePage.css">
+  <link rel="stylesheet" href="./css/header_footer.css">
+  <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
 
-    <style type="text/css">
-      .ta-display-container{
-        position: relative;
-      }
-      .ta-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
-      .ta-black,.ta-hover-black:hover{color:#fff!important;background-color:#000!important}
-	  .ta-container:after,.ta-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.ta-row-padding:after,.ta-row-padding:before
-	  .ta-row-padding,.ta-row-padding>.w3-half,.ta-row-padding>.w3-third,.ta-row-padding>.w3-twothird,.ta-row-padding>.w3-threequarter,.ta-row-padding>.w3-quarter,.ta-row-padding>.w3-col{padding:0 8px}
-	  .ta-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
-    </style>
+  <style type="text/css">
+    .ta-display-container {
+      position: relative;
+    }
+
+    .ta-display-bottomleft {
+      position: absolute;
+      left: 0;
+      bottom: 0
+    }
+
+    .w3-display-bottomright {
+      position: absolute;
+      right: 0;
+      bottom: 0
+    }
+
+    .ta-black,
+    .ta-hover-black:hover {
+      color: #fff !important;
+      background-color: #000 !important
+    }
+
+    .ta-container:after,
+    .ta-container:before,
+    .w3-panel:after,
+    .w3-panel:before,
+    .w3-row:after,
+    .w3-row:before,
+    .ta-row-padding:after,
+    .ta-row-padding:before .ta-row-padding,
+    .ta-row-padding>.w3-half,
+    .ta-row-padding>.w3-third,
+    .ta-row-padding>.w3-twothird,
+    .ta-row-padding>.w3-threequarter,
+    .ta-row-padding>.w3-quarter,
+    .ta-row-padding>.w3-col {
+      padding: 0 8px
+    }
+
+    .ta-section,
+    .w3-code {
+      margin-top: 16px !important;
+      margin-bottom: 16px !important
+    }
+  </style>
 </head>
- <!-- home page -->
-    <div class="header">
-        <!-- test nav-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="/image/logo/png/logo-color.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<!-- home page -->
+<div class="header">
+  <!-- test nav-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/image/logo/png/logo-color.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+        <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link item-menu active" aria-current="page" href="./Index.html">Home</a>
+          </li>
+          <li class="nav-item item-menu">
+            <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./Produtcts-List.html?category=Living&cattype=types">Drawing/Living room
+                  mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=Bathroom&cattype=types">Bathroom mirrors</a>
+              </li>
+              <li><a href="./Produtcts-List.html">Dressing mirrors</a></li>
+              <li><a href="./Produtcts-List.html">Bedroom mirrors</a></li>
+              <li class="add-category">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#createCategory">
+                  <i class="fa fa-plus-circle"></i> Add category
                 </button>
-                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-                  <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link item-menu active" aria-current="page" href="./Index.html">Home</a>
-                    </li>
-                    <li class="nav-item item-menu">
-                        <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li><a href="./Produtcts-List.html?category=Living&cattype=types">Drawing/Living room mirrors</a></li>
-                            <li><a href="./Produtcts-List.html?category=Bathroom&cattype=types">Bathroom mirrors</a></li>
-                            <li><a href="./Produtcts-List.html">Dressing mirrors</a></li>
-                            <li><a href="./Produtcts-List.html">Bedroom mirrors</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item item-menu">
-                        <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li><a href="./Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a></li>
-                            <li><a href="./Produtcts-List.html?category=Acrylic&cattype=material">Acrylic bordered</a></li>
-                            <li><a href="./Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a></li>
-                            <li><a href="./Produtcts-List.html?category=Decorative&cattype=material">Decorative mirrors</a></li>
-                            <li><a href="./Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
-                            <li><a href="./Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth mirrors</a></li>
-                        </ul>
-                    </li>
-                    <li class="item-menu"><a class="nav-link" href="./Contact.html">Contact Us</a></li>
-                </ul>
-                <div class="search">
-                    <form action="./Produtcts-List.html" method="get" class="d-flex" role="search">
-                        <input type="hidden" name="cattype" value="search">
-                        <input type="search" class="searchTerm" name="search" placeholder="What are you search for?">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </form>
-                </div>
-
-                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item item-menu">
+            <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Acrylic&cattype=material">Acrylic bordered</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Decorative&cattype=material">Decorative
+                  mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth
+                  mirrors</a></li>
+              <li class="add-category">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#createCategory">
+                  <i class="fa fa-plus-circle"></i> Add category
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="item-menu"><a class="nav-link" href="./Contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search">
+          <form action="./Produtcts-List.html" method="get" class="d-flex" role="search">
+            <input type="hidden" name="cattype" value="search">
+            <input type="search" class="searchTerm" name="search" placeholder="What are you search for?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="createCategory" tabindex="-1" aria-labelledby="createCateLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="createCateLabel">Create category</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="category-name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="category-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="description-text" class="col-form-label">Description:</label>
+                    <textarea class="form-control" id="description-text"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <i><span class="badge text-bg-danger">Warning</span>: Names and information
+                      generated are subject to <a href="#"> our community standards.</a></i>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Create your category</button>
+                </form>
+              </div>
             </div>
-        </nav>
+          </div>
+        </div>
+      </div>
     </div>
+  </nav>
+</div>
 
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-white" style="margin-right:25%">
+<div class="container content">
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:80px"></div>
+  <div class="row">
+    <!-- Filter -->
+    <div class="col-sm-3 mb-3">
+      <div class="accordion accordion-flush" id="filter">
+        <div class="accordion-item">
+          <div class="title-filter">
+            <a href="./Index.html">
+              <h4 class="m-1 p-3">Clear Reflections</h4>
+            </a>
+            <span class="m-1 p-3">FILTER BY: </span>
 
-  <div class="ta-container" id="apartment">
-    <h2 style="color: green;">The Apartment</h2>
-
-  <!-- Slideshow Image -->
-    <div class="ta-display-container mySlides">
-    <img src="./image/MW18283S.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="ta-display-bottomleft ta-black">
-        <p>Living Room</p>
-      </div>
-    </div>
-    <div class="ta-display-container mySlides">
-    <img src="./image/MW19103.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="ta-display-bottomleft ta-black">
-        <p>Living Room II</p>
-      </div>
-    </div>
-  </div>
-  <div class="ta-row-padding ta-section row">
-    <div class="col-4">
-      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
-    </div>
-    <div class="col-4">
-      <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Second Living Room">
-    </div>
-  <!-- Slideshow Image -->
-
-  </div>
-
-    
-    <h4><strong>Description</strong></h4>
-    <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <hr>
-    
-    <h4><strong>User guide</strong></h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p></p>
-    <p><button>Buy</button></p>
-    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
-  </div>
-  <hr>
-  
-
-  <!-- Slideshow Related Product -->
-    <h5>The related product</h5>
-  <div class="ta-row-padding ta-section row">
-    <div class="col-4">
-      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
-    </div>
-    <div class="col-4">
-      <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Second Living Room">
-    </div>
-    <div class="col-4">
-      <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
-    </div>
-  </div>    
-  <!-- Slideshow Related Product -->
-  
-  
-  
-  
-     <div class="footer">
-        <div class="container">
-            <div class="contact footer-item">
-                <h3>Contact</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i>abc</li>
-                    <li><i class="fas fa-envelope"></i>email@example.com</li>
-                    <li><i class="fas fa-phone"></i>+123-456-7890</li>
-                </ul>
+          </div>
+          <div class="checkbox-filer m-2 p-3">
+            <input type="checkbox" name="" id="checkboxAll" value="1">
+            <label for="checkboxAll">All products</label>
+          </div>
+          <h2 class="accordion-header" id="flush-room__mirrors">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseRoom__mirrors" aria-expanded="true"
+              aria-controls="flush-collapseRoom__mirrors">
+              ROOM MIRRORS
+            </button>
+          </h2>
+          <div id="flush-collapseRoom__mirrors" class="accordion-collapse collapse show"
+            aria-labelledby="flush-room__mirrors">
+            <div class="accordion-body">
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxDrawing" value="1">
+                <label for="checkboxDrawing">Drawing/Lingving room mirrors</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxBathroom" value="1">
+                <label for="checkboxBathroom">Bathroom mirrors</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxDressing" value="1">
+                <label for="checkboxDressing">Dressing mirrors</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxBedroom" value="1">
+                <label for="checkboxBedroom">Bedroom mirrors</label>
+              </div>
             </div>
-            <div class="social footer-item">
-                <h3>Follow Us</h3>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
-
-            </div>
-            <div class="product footer-item">
-                <h3>Company Info</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                </ul>
-            </div>
-            <div class="main-info footer-item">
-                <h3>Purchase Info</h3>
-                <ul>
-                    <li><a href="#">Payment Policy</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-material">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseMaterial" aria-expanded="true" aria-controls="flush-collapseMaterial">
+              MATERIAL
+            </button>
+          </h2>
+          <div id="flush-collapseMaterial" class="accordion-collapse collapse show" aria-labelledby="flush-material">
+            <div class="accordion-body">
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxWooden" value="1">
+                <label for="checkboxWooden">Wooden framed</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxAcrylic" value="1">
+                <label for="checkboxAcrylic">Acrylic framed</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxMetal" value="1">
+                <label for="checkboxMetal">Metal framed</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxDecorative" value="1">
+                <label for="checkboxDecorative">Decorative mirrors</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxLED" value="1">
+                <label for="checkboxLED">LED mirrors</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxBluetooth" value="1">
+                <label for="checkboxBluetooth">Bluetooth mirrors</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-shape">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseShape" aria-expanded="false" aria-controls="flush-collapseShape">
+              SHAPE
+            </button>
+          </h2>
+          <div id="flush-collapseShape" class="accordion-collapse collapse" aria-labelledby="flush-shape">
+            <div class="accordion-body">
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxCircle" value="1">
+                <label for="checkboxCircle">Circle</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxSquare" value="1">
+                <label for="checkboxSquare">Square</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxEllipse" value="1">
+                <label for="checkboxEllipse">Ellipse</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-price">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsePrice" aria-expanded="false" aria-controls="flush-collapsePrice">
+              PRICE
+            </button>
+          </h2>
+          <div id="flush-collapsePrice" class="accordion-collapse collapse" aria-labelledby="flush-price">
+            <div class="accordion-body">
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxLowtohigh" value="1">
+                <label for="checkboxLowtohigh">From low to high</label>
+              </div>
+              <div class="checkbox-filer m-2">
+                <input type="checkbox" name="" id="checkboxHightolow" value="1">
+                <label for="checkboxHightolow">From high to low</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- End Filter -->
+
+    <!-- product -->
+    <div class="col-sm-9">
+      <div class="w3-main w3-white" style="margin-right:25%">
+
+        <!-- Push down content on small screens -->
+        
+
+        <div class="ta-container" id="apartment">
+          <h2 style="color: green;">The Apartment</h2>
+
+          <!-- Slideshow Image -->
+          <div class="ta-display-container mySlides">
+            <img src="./image/MW18283S.jpg" style="width:100%;margin-bottom:-6px">
+            <div class="ta-display-bottomleft ta-black">
+              <p>Living Room</p>
+            </div>
+          </div>
+          <div class="ta-display-container mySlides">
+            <img src="./image/MW19103.jpg" style="width:100%;margin-bottom:-6px">
+            <div class="ta-display-bottomleft ta-black">
+              <p>Living Room II</p>
+            </div>
+          </div>
+        </div>
+        <div class="ta-row-padding ta-section row">
+          <div class="col-4">
+            <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)"
+              title="Living room">
+          </div>
+          <div class="col-4">
+            <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"
+              title="Second Living Room">
+          </div>
+          <!-- Slideshow Image -->
+
+        </div>
+
+
+        <h4><strong>Description</strong></h4>
+        <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
+          consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <hr>
+
+        <h4><strong>User guide</strong></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <p></p>
+        <p><button>Buy</button></p>
+        <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i
+            class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i
+            class="fa fa-cc-paypal w3-large"></i></p>
+      </div>
+      <hr>
+
+
+      <!-- Slideshow Related Product -->
+      <h5>The related product</h5>
+      <div class="ta-row-padding ta-section row">
+        <div class="col-4">
+          <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+        </div>
+        <div class="col-4">
+          <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"
+            title="Second Living Room">
+        </div>
+        <div class="col-4">
+          <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+        </div>
+      </div>
+      <!-- Slideshow Related Product -->
+    </div>
+    <!-- end product -->
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="contact footer-item col-sm mb-2">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i>abc</li>
+          <li><i class="fas fa-envelope"></i>email@example.com</li>
+          <li><i class="fas fa-phone"></i>+123-456-7890</li>
+        </ul>
+      </div>
+      <div class="social footer-item col-sm mb-2">
+        <h3>Follow Us</h3>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+
+      </div>
+      <div class="product footer-item col-sm mb-2">
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="./Contact.html">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+      <div class="main-info footer-item col-sm mb-2">
+        <h3>Purchase Info</h3>
+        <ul>
+          <li><a href="#">Payment Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
-// Script to open and close sidebar when on tablets and phones
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Slideshow Apartment Images
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  // Script to open and close sidebar when on tablets and phones
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
+
+  // Slideshow Apartment Images
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-opacity-off";
+  }
 </script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
