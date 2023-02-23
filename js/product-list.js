@@ -108,7 +108,7 @@ function loop(){
         '<div class="product-item">'+
             '<div class="product-top">'+
                 '<a href="./Detail.html?id='+products[i].id+'" class="product-thumb">'+
-                    '<img src="'+products[i].img+'" alt="" class="imageChange">'+
+                    '<img src="'+products[i].img[0]+'" alt="" class="imageChange">'+
                 '</a>'+
                 '<a href="./Detail.html?id='+products[i].id+'" class="buy-now">Buy now</a>'+
             '</div>'+
@@ -122,3 +122,19 @@ function loop(){
     }
 }
 loop();
+function filter(){
+    
+    let materials=document.getElementsByClassName('materials');
+    let shape=document.getElementsByClassName('shape');
+    let price=document.getElementsByClassName('price');
+    
+
+}
+function filter_types() {
+    let types=document.getElementsByClassName('types');
+    let check=false;
+    for(var i=0;i<products.length;i++){
+        for(var j=0;j<types.length;j++){
+        }
+    }
+}
