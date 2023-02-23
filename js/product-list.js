@@ -132,9 +132,51 @@ function filter(){
 }
 function filter_types() {
     let types=document.getElementsByClassName('types');
-    let check=false;
-    for(var i=0;i<products.length;i++){
-        for(var j=0;j<types.length;j++){
+    let remove=[];
+    for(var j=0;j<types.length;j++){
+        if(types[j].checked){
+            for(var i=0;i<products.length;i++){
+                let check=false;
+                for(var k=0;k<products[i].types.length;k++){
+                    if(types[j].value.toLowerCase().includes(products[i].types[k].toLowerCase())){
+                        check=true;
+                    }
+                }
+                if(check==false){
+                    remove[remove.length]=i;
+                }
+            }
+            for(var i=0;i<remove.length;i++){
+                products.splice(remove[i],1);
+            }
+            remove=[];
         }
-    }
+    } 
 }
+
+function filter_materials() {
+    let materials=document.getElementsByClassName('materials');
+    let remove=[];
+    for(var j=0;j<materials.length;j++){
+        if(materials[j].checked){
+           for(var i=0;i<products.length;i++){
+            let check=false;
+            for(var k=0;k<products[i].materials.length;k++){
+                if(materials[j].value.toLowerCase().includes(products[i].materials[k].toLowerCase())){
+                    check=true;
+                }
+            }
+            if(check==false){
+                remove[remove.length]=i;
+            }
+          }   
+        for(var i=0;i<remove.length;i++){
+            products.splice(remove[i],1);
+        }
+        remove=[];
+        }
+    } 
+}
+
+
+
