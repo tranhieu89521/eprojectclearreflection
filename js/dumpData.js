@@ -2,8 +2,8 @@ window.listProducts = [
 	{
 		id: 1,
 		name: 'KRISTALLUM Backlit Bathroom Mirror with Lights',
-		category: ['Trendy', 'Best_Seller','Modern'],
-		types: ['Bathroom'],
+		types: ['Trendy', 'Best_Seller','Modern'],
+		category: ['Bathroom'],
 		price: {
 			origin: 900,
 			sale: 800,
@@ -17,8 +17,8 @@ window.listProducts = [
 	{
 		id: 2,
 		name: 'SNUGACE Single Beveled Edge Frameless Wall Mount Bathroom Vanity Mirror',
-		category: ['Trendy'],
-		types: ['Bathroom'],
+		types: ['Trendy'],
+		category: ['Bathroom'],
 		price: {
 			origin: 579,
 			sale: 467,
@@ -32,8 +32,8 @@ window.listProducts = [
 	{
 		id: 3,
 		name: 'ANDY STAR Chrome Mirror for Bathroom',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 790,
 			sale: 700,
@@ -47,8 +47,8 @@ window.listProducts = [
 	{
 		id: 4,
 		name: 'oruii Round Mirror',
-		category: [''],
-		types: ['Living Room','Hallway','Dining Room'],
+		types: [''],
+		category: ['Living Room','Hallway','Dining Room'],
 		price: {
 			origin: 670,
 			sale: 610,
@@ -62,8 +62,8 @@ window.listProducts = [
     {
 		id: 5,
 		name: 'CASSILANDO Arched Mirror',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 970,
 			sale: 890,
@@ -77,8 +77,8 @@ window.listProducts = [
 	{
 		id: 6,
 		name: 'Hasipu LED Bathroom Mirror with Lights',
-		category: [''],
-		types: ['Living Room','Bedroom'],
+		types: [''],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 899,
 			sale: 877,
@@ -92,8 +92,8 @@ window.listProducts = [
 	{
 		id: 7,
 		name: 'MIOZON Backlit Mirror',
-		category: ['Modern'],
-		types: ['Bathroom'],
+		types: ['Modern'],
+		category: ['Bathroom'],
 		price: {
 			origin: 589,
 			sale: 340,
@@ -107,8 +107,8 @@ window.listProducts = [
 	{
 		id: 8,
 		name: 'Arcus Home Black Bathroom Mirror',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 489,
 			sale: 460,
@@ -122,8 +122,8 @@ window.listProducts = [
 	{
 		id: 9,
 		name: 'Catollova Black Bathroom Mirror',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 589,
 			sale: 570,
@@ -137,8 +137,8 @@ window.listProducts = [
 	{
 		id: 10,
 		name: 'NEUWEABY Black Oval Mirror for Bathroom',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 690,
 			sale: 680,
@@ -152,8 +152,8 @@ window.listProducts = [
 	{
 		id: 11,
 		name: 'Growsun Black Round Mirror',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 960,
 			sale: 700,
@@ -167,8 +167,8 @@ window.listProducts = [
 	{
 		id: 12,
 		name: 'SUPER DEAL Black Wall Mirror for Bathroom',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 300,
 			sale: 200,
@@ -182,8 +182,8 @@ window.listProducts = [
 	{
 		id: 13,
 		name: 'Koonmi Black Bathrooms Mirror for Wall',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 710,
 			sale: 590,
@@ -197,8 +197,8 @@ window.listProducts = [
 	{
 		id: 14,
 		name: 'Ruomeng Rectangular Wall Mirror',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 570,
 			sale: 437,
@@ -212,8 +212,8 @@ window.listProducts = [
 	{
 		id: 15,
 		name: 'Black Wall Framed Rectangular Mirrors for Bathrooms',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 827,
 			sale: 600,
@@ -227,8 +227,8 @@ window.listProducts = [
 	{
 		id: 16,
 		name: 'Manocorro Black Oval Wall Mirror',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 628,
 			sale: 590,
@@ -242,8 +242,8 @@ window.listProducts = [
 	{
 		id: 17,
 		name: 'CASSILANDO Irregular Wall Mirror',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 945,
 			sale: 950,
@@ -257,8 +257,8 @@ window.listProducts = [
 	{
 		id: 18,
 		name: 'OKPAL 72X32 INCH RGB LED Bathroom Mirror',
-		category: [''],
-		types: ['Bathroom'],
+		types: [''],
+		category: ['Bathroom'],
 		price: {
 			origin: 990,
 			sale: 980,
@@ -272,8 +272,8 @@ window.listProducts = [
 	{
 		id: 19,
 		name: 'XIHACTY 2 Piece Wall Mirrors',
-		category: ['Diamond'],
-		types: ['Living Room'],
+		types: ['Diamond'],
+		category: ['Living Room'],
 		price: {
 			origin: 595,
 			sale: 546,
@@ -287,8 +287,8 @@ window.listProducts = [
 	{
 		id: 20,
 		name: 'MIRUO Full Length Mirror Decor Wall Mounted',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 798,
 			sale: 690,
@@ -302,8 +302,8 @@ window.listProducts = [
 	{
 		id: 21,
 		name: 'Kemmandi 10 Pieces Hexagonal Mirror Wall Mirror',
-		category: [''],
-		types: ['Living Room','Bedroom'],
+		types: [''],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 846,
 			sale: 800,
@@ -317,8 +317,8 @@ window.listProducts = [
 	{
 		id: 22,
 		name: 'HA Black&Gold Framed Rectangle Bathroom Mirrors for Wall',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 245,
 			sale: 145,
@@ -332,8 +332,8 @@ window.listProducts = [
 	{
 		id: 23,
 		name: 'Vaabee Family Tree Wall Decor Acrylic 3D DIY Mirror',
-		category: ['Modern'],
-		types: ['Living Room','Bedroom', 'Dinning Room'],
+		types: ['Modern'],
+		category: ['Living Room','Bedroom', 'Dinning Room'],
 		price: {
 			origin: 642,
 			sale: 589,
@@ -347,8 +347,8 @@ window.listProducts = [
 	{
 		id: 24,
 		name: 'Chende Mirror for Wall Decor Living Room',
-		category: [''],
-		types: ['Living Room'],
+		types: [''],
+		category: ['Living Room'],
 		price: {
 			origin: 856,
 			sale: 800,
@@ -362,8 +362,8 @@ window.listProducts = [
 	{
 		id: 25,
 		name: 'Honiway Wall Mirror',
-		category: [''],
-		types: ['Living Room','Bedroom'],
+		types: [''],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 757,
 			sale: 734,
@@ -377,8 +377,8 @@ window.listProducts = [
 	{
 		id: 26,
 		name: 'Framed Bevel Leaner Full Length Huge Floor Mirror',
-		category: ['Modern'],
-		types: ['Living Room','Bedroom'],
+		types: ['Modern'],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 467,
 			sale: 450,
@@ -392,8 +392,8 @@ window.listProducts = [
 	{
 		id: 27,
 		name: 'LFT HUIMEI2Y Full Length Floor Mirror',
-		category: [''],
-		types: ['Living Room','Bedroom'],
+		types: [''],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 789,
 			sale: 755,
