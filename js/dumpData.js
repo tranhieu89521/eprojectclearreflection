@@ -1,4 +1,4 @@
-export const listProducts = [
+window.listProducts = [
 	{
 		id: 1,
 		name: 'KRISTALLUM Backlit Bathroom Mirror with Lights',

@@ -1,4 +1,4 @@
-import { listProducts } from "./dumpData.js";
+let listProducts=window.listProducts;
 const query=window.location.search;
 const urlparam=new URLSearchParams(query);
 let products=[];
