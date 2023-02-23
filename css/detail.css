@@ -1,0 +1,160 @@
+.mySlides {
+    position: relative;
+}
+
+.ta-container:after,
+.ta-container:before,
+.ta-row-padding:after,
+.ta-row-padding:before .ta-row-padding {
+    padding: 0 8px
+}
+
+.ta-container h2 {
+    color: var(--textColor);
+}
+
+.ta-section {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    position: relative;
+}
+
+.ta-section img {
+    width: 100%;
+}
+
+#featured {
+    max-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.thumbnail {
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
+#slide-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#slider {
+    width: 610px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+
+#slider::-webkit-scrollbar {
+    height: 10px;
+}
+
+#slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+
+}
+
+#slider::-webkit-scrollbar-thumb {
+    background-color: var(--backgroundNavbar);
+    outline: var(--backgroundContent);
+    border-radius: 100px;
+
+}
+
+
+.payment-section {
+    background: var(--backgroundNavbar);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.payment-section .payment-price {
+    display: flex;
+}
+
+.payment-section .payment-price .sale-price {
+    font-weight: 600;
+    color: var(--black);
+}
+
+.payment-section .buy__button {
+    width: 70px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: var(--textColor);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}

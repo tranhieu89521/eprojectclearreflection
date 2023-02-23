@@ -9,39 +9,12 @@
   <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/HomePage.css">
+  <link rel="stylesheet" href="./css/detail.css">
   <link rel="stylesheet" href="./css/header_footer.css">
   <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-  <style type="text/css">
-    .ta-display-container {
-      position: relative;
-    }
 
-    .ta-display-bottomleft {
-      position: absolute;
-      left: 0;
-      bottom: 0
-    }
-
-    .ta-black,
-    .ta-hover-black:hover {
-      color: #fff !important;
-      background-color: #000 !important
-    }
-
-    .ta-container:after,
-    .ta-container:before,
-    .ta-row-padding:after,
-    .ta-row-padding:before .ta-row-padding {
-      padding: 0 8px
-    }
-
-    .ta-section {
-      margin-top: 16px !important;
-      margin-bottom: 16px !important
-    }
-  </style>
 </head>
 <!-- home page -->
 <div class="header">
@@ -278,95 +251,203 @@
     <!-- product -->
     <div class="col-sm-9">
       <div>
+        <div class="row mb-3">
+          <div class="col-sm-8">
+            <img id=featured src="/image/MW15021A.jpg">
 
-        <div class="ta-container" id="apartment">
-          <h2 style="color: green;">Name: The Apartment</h2>
+            <div id="slide-wrapper">
 
-          <!-- Slideshow Image -->
-          <div class="ta-display-container mySlides">
-            <img src="./image/MW18283S.jpg" style="width:100%;margin-bottom:-6px">
-            <div class="ta-display-bottomleft ta-black">
-              <p>Living Room</p>
+              <div id="slider">
+                <img class="thumbnail active" src="/image/MW15021A.jpg">
+                <img class="thumbnail" src="/image/MW16117.jpg">
+                <img class="thumbnail" src="/image/MW18092.jpg">
+
+                <img class="thumbnail" src="/image/MW18283S.jpg">
+                <img class="thumbnail" src="/image/MW19076.jpg">
+              </div>
             </div>
           </div>
-          <div class="ta-display-container mySlides">
-            <img src="./image/MW19103.jpg" style="width:100%;margin-bottom:-6px">
-            <div class="ta-display-bottomleft ta-black">
-              <p>Living Room II</p>
+          <div class="col-sm-4">
+            <h2 class="name__product mt-2">The Apartment</h2>
+            <div class="payment-section">
+              <div class="payment-price">
+                <span class="origin-price m-2">
+                  <s>
+                    $150.00
+                  </s>
+                </span>
+                <h2 class="sale-price m-2">$115.00</h2>
+                <button class="btn btn-dark buy__button">Buy</button>
+              </div>
+              <p>
+                We accept:
+                <i class="fa fa-credit-card w3-large"></i>
+                <i class="fa fa-cc-mastercard w3-large"></i>
+                <i class="fa fa-cc-amex w3-large"></i>
+                <i class="fa fa-cc-cc-visa w3-large"></i>
+                <i class="fa fa-cc-paypal w3-large"></i>
+              </p>
             </div>
+            <div class="w3-row w3-large m-3">
+              <div class="w3-col s6">
+                <i class="fa fa-fw fa-bath"></i> Bathrooms <span> | - |</span>
+                <i class="fa fa-fw fa-bed"></i> Bedrooms <span> | - |</span>
+                <i class="fa fa-fw fa-tv"></i> Livingrooms <span> | - |</span>
+                <i class="fa fa-fw fa-cutlery"></i> Kitchen
+              </div>
+            </div>
+            <hr>
+
+
+            <div class="w3-row w3-la m-3">
+              <h4><strong>Material </strong></h4>
+              <div class="w3-col s6">
+                <i class="fa fa-fw fa-wifi"></i> Bluetooth <span> | - |</span>
+                <i class="fa fa-fw fa-shower"></i> Led <span> | - |</span>
+                <i class="fa fa-fw fa-thermometer"></i> Heating <span> | - |</span>
+                <i class="fa fa-fw fa-wheelchair"></i> Accessible
+              </div>
+            </div>
+            <hr>
           </div>
         </div>
-        <div class="ta-row-padding ta-section row">
-          <div class="col-4">
-            <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)"
-              title="Living room">
-          </div>
-          <div class="col-4">
-            <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"
-              title="Second Living Room">
-          </div>
-          <!-- Slideshow Image -->
 
+
+        <div class="mb-3">
+          <h4><strong>Description</strong></h4>
+          <p>
+            Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <button class="btn btn-dark">
+            <i class="fa fa-download"></i>
+            Download document
+          </button>
         </div>
-
-
-    <h4><strong>The space</strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <i class="fa fa-fw fa-bath"></i> Bathrooms <span>    |  -  |</span>
-        <i class="fa fa-fw fa-bed"></i> Bedrooms <span>    |  -  |</span>
-        <i class="fa fa-fw fa-tv"></i> Livingrooms <span>    |  -  |</span>
-        <i class="fa fa-fw fa-cutlery"></i> Kitchen 
-      </div>
-    </div>
-	<br>
-    <hr>
-
-    <h4><strong>Material </strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <i class="fa fa-fw fa-wifi"></i> Bluetooth <span>    |  -  |</span>
-        <i class="fa fa-fw fa-shower"></i> Led  <span>    |  -  |</span>
-        <i class="fa fa-fw fa-thermometer"></i> Heating <span>    |  -  |</span>
-        <i class="fa fa-fw fa-wheelchair"></i> Accessible 
-      </div>
-      <div class="w3-col s6">
-      </div>
-    </div>
-	<br>
-    <hr>
-        <h4><strong>Description</strong></h4>
-        <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
-          consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <hr>
 
-	
-		<h3>sale: $99</h3>
-		<h6><del>price origin: 55</del></h6>
-        <p><button>Buy</button></p>
-		
-        <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i
-            class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i
-            class="fa fa-cc-paypal w3-large"></i></p>
+
       </div>
-      <hr>
 
 
       <!-- Slideshow Related Product -->
-      <h5>The related product</h5>
-      <div class="ta-row-padding ta-section row">
-        <div class="col-4">
-          <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
-        </div>
-        <div class="col-4">
-          <img src="./image/MW19103.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"
-            title="Second Living Room">
-        </div>
-        <div class="col-4">
-          <img src="./image/MW18283S.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+      <div class="related-product mb-3">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-md-3 m-1">
+                  <div class="card p-1" style="width: 100%;">
+                    <a href="./Produtcts-List.html">
+                      <img src="./image/MW19103.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="description-body">
+                        <div class="text-description">
+                          <p>
+                            <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
+                          </p>
+                          <p class="card-text">When bigger is better</p>
+                        </div>
+                        <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3 m-1">
+                  <div class="card p-1" style="width: 100%;">
+                    <a href="./Produtcts-List.html">
+                      <img src="./image/MW19103.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="description-body">
+                        <div class="text-description">
+                          <p>
+                            <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
+                          </p>
+                          <p class="card-text">When bigger is better</p>
+                        </div>
+                        <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3 m-1">
+                  <div class="card p-1" style="width: 100%;">
+                    <a href="./Produtcts-List.html">
+                      <img src="./image/MW19103.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="description-body">
+                        <div class="text-description">
+                          <p>
+                            <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
+                          </p>
+                          <p class="card-text">When bigger is better</p>
+                        </div>
+                        <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3 m-1">
+                  <div class="card p-1" style="width: 100%;">
+                    <a href="./Produtcts-List.html">
+                      <img src="./image/MW19103.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="description-body">
+                        <div class="text-description">
+                          <p>
+                            <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
+                          </p>
+                          <p class="card-text">When bigger is better</p>
+                        </div>
+                        <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3 m-1">
+                  <div class="card p-1" style="width: 100%;">
+                    <a href="./Produtcts-List.html">
+                      <img src="./image/MW19103.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="description-body">
+                        <div class="text-description">
+                          <p>
+                            <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
+                          </p>
+                          <p class="card-text">When bigger is better</p>
+                        </div>
+                        <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
         </div>
       </div>
       <!-- Slideshow Related Product -->
@@ -384,9 +465,9 @@
       <div class="contact footer-item col-sm mb-2">
         <h3>Contact</h3>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i>abc</li>
-          <li><i class="fas fa-envelope"></i>email@example.com</li>
-          <li><i class="fas fa-phone"></i>+123-456-7890</li>
+          <li><i class="fas fa-map-marker-alt"></i>175 Tay Son street, Dong Da district, Hanoi, Vietnam</li>
+          <li><i class="fas fa-envelope"></i>info@aptech.vn</li>
+          <li><i class="fas fa-phone"></i>+84 382020858</li>
         </ul>
       </div>
       <div class="social footer-item col-sm mb-2">
@@ -418,45 +499,56 @@
   </div>
 </div>
 
-<script>
-  // Script to open and close sidebar when on tablets and phones
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
 
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-  }
 
-  // Slideshow Apartment Images
-  var slideIndex = 1;
-  showDivs(slideIndex);
+<script type="text/javascript">
+  let items = document.querySelectorAll('.carousel .carousel-item')
 
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = x.length }
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+  items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        next = items[0]
+      }
+      let cloneChild = next.cloneNode(true)
+      el.appendChild(cloneChild.children[0])
+      next = next.nextElementSibling
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-    }
-    x[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " w3-opacity-off";
+  })
+
+</script>
+<script type="text/javascript">
+  let thumbnails = document.getElementsByClassName('thumbnail')
+
+  let activeImages = document.getElementsByClassName('active')
+
+  for (var i = 0; i < thumbnails.length; i++) {
+
+    thumbnails[i].addEventListener('mouseover', function () {
+      console.log(activeImages)
+
+      if (activeImages.length > 0) {
+        activeImages[0].classList.remove('active')
+      }
+
+
+      this.classList.add('active')
+      document.getElementById('featured').src = this.src
+    })
   }
+
+
+  let buttonRight = document.getElementById('slideRight');
+  let buttonLeft = document.getElementById('slideLeft');
+
+  buttonLeft.addEventListener('click', function () {
+    document.getElementById('slider').scrollLeft -= 180
+  })
+
+  buttonRight.addEventListener('click', function () {
+    document.getElementById('slider').scrollLeft += 180
+  });
 </script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
