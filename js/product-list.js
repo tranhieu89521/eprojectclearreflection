@@ -111,21 +111,46 @@ switch(cattpye){
 function loop(){
     document.getElementById('products').innerHTML='';
     for(var i=0;i<products.length;i++){
-        document.getElementById('products').innerHTML+='<li id="'+products[i].id+'">'+
-        '<div class="product-item">'+
-            '<div class="product-top">'+
-                '<a href="./Detail.html?id='+products[i].id+'" class="product-thumb">'+
-                    '<img src="'+products[i].img[0]+'" alt="" class="imageChange">'+
-                '</a>'+
-                '<a href="./Detail.html?id='+products[i].id+'" class="buy-now">Buy now</a>'+
-            '</div>'+
-            '<div class="product-introduce">'+
-                '<div class="product-price"><strong>'+products[i].price.sale+' $</strong>&ensp;<del>'+products[i].price.origin+' $</del></div>'+
-                '<div><br></div>'+
-                '<div class="product-name"><strong><a href="./Detail.html?id='+products[i].id+'">'+products[i].name+'</a></strong></div>'+
+        var string='<div id="'+products[i].id+'" class="col-sm-4 mb-3">'+
+        '<div class="card">'+
+            '<a href="./Detail.html?id='+products[i].id+'">'+
+                '<img src="'+products[i].img[0]+'" class="card-img-top">'+
+            '</a>'+
+            '<div class="card-body">'+
+                '<div class="description-body">'+
+                    '<div class="tag-products">';
+                    for(var j=0;j<products[i].category.length;j++){
+                        string+='<span class="badge text-bg-secondary">'+products[i].category[j]+'</span>';
+                    }
+                    string+='</div>'+
+                    '<div class="text-description">'+
+                        '<p class="name-product">'+
+                            '<a href="./Detail.html?id='+products[i].id+'">'+
+                               products[i].name+
+                            '</a>'+
+                        '</p>'+
+                    '</div>'+
+                    '<div class="content-product">'+
+                        '<div class="info-product">'+
+                            '<div class="price-product">'+
+                                '<span class="origin-price m-1"><s>$'+products[i].price.origin+'</s></span>'+
+                                '<span class="sale-price m-1">$'+products[i].price.sale+'</span>'+
+                            '</div>'+
+                            '<div class="decription-sumary">'+
+                                '<p>'+
+                                  products[i].detailShort+
+                                '</p>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="payment-button">'+
+                            '<a href="./Detail.html?id='+products[i].id+'" class="btn btn-dark">Buy now</a>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'+
             '</div>'+
         '</div>'+
-    '</li>';
+    '</div>';
+    document.getElementById('products').innerHTML+=string;
     }
 }
 loop();
