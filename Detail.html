@@ -14,7 +14,7 @@
   <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-
+  <script src="./js/dumpData.js"></script>
 </head>
 <!-- home page -->
 <div class="header">
@@ -126,29 +126,19 @@
       <div>
         <div class="row mb-3">
           <div class="col-sm-7">
-            <img id=featured src="/image/MW15021A.jpg">
-
+            <div id="image"></div>
             <div id="slide-wrapper">
-
               <div id="slider">
-                <img class="thumbnail active" src="/image/MW15021A.jpg">
-                <img class="thumbnail" src="/image/MW16117.jpg">
-                <img class="thumbnail" src="/image/MW18092.jpg">
-
-                <img class="thumbnail" src="/image/MW18283S.jpg">
               </div>
             </div>
           </div>
           <div class="col-sm-5">
-            <h2 class="name__product mt-2">The Apartment</h2>
+            <h2 id="name" class="name__product mt-2"></h2>
             <div class="payment-section">
               <div class="payment-price">
-                <span class="origin-price m-2">
-                  <s>
-                    $150.00
-                  </s>
+                <span id="origin" class="origin-price m-2">
                 </span>
-                <h2 class="sale-price m-2">$115.00</h2>
+                <h2 id="sale" class="sale-price m-2"></h2>
                 <button class="btn btn-dark buy__button">Buy</button>
               </div>
               <p>
@@ -161,23 +151,13 @@
               </p>
             </div>
             <div class="w3-row w3-large m-3">
-              <div class="w3-col s6">
-                <i class="fa fa-fw fa-bath"></i> Bathrooms <span> | - |</span>
-                <i class="fa fa-fw fa-bed"></i> Bedrooms <span> | - |</span>
-                <i class="fa fa-fw fa-tv"></i> Livingrooms <span> | - |</span>
-                <i class="fa fa-fw fa-cutlery"></i> Kitchen
+              <div id="category" class="w3-col s6">
               </div>
             </div>
             <hr>
-
-
             <div class="w3-row w3-la m-3">
               <h4><strong>Material </strong></h4>
-              <div class="w3-col s6">
-                <i class="fa fa-fw fa-wifi"></i> Bluetooth <span> | - |</span>
-                <i class="fa fa-fw fa-shower"></i> Led <span> | - |</span>
-                <i class="fa fa-fw fa-thermometer"></i> Heating <span> | - |</span>
-                <i class="fa fa-fw fa-wheelchair"></i> Accessible
+              <div id="materials" class="w3-col s6">
               </div>
             </div>
             <hr>
@@ -187,12 +167,7 @@
 
         <div class="mb-3">
           <h4><strong>Description</strong></h4>
-          <p>
-            Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
-            consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <p id="dep">
           </p>
           <button class="btn btn-dark">
             <i class="fa fa-download"></i>
@@ -422,6 +397,7 @@
     document.getElementById('slider').scrollLeft += 180
   });
 </script>
+<script src="./js/Detail.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
 <script src="./js/main.js"></script>
