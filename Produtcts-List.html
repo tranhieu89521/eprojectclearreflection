@@ -37,12 +37,12 @@
                         <li class="nav-item item-menu">
                             <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
                             <ul class="sub-menu">
-                                <li><a href="./Produtcts-List.html?category=Living&cattype=types">Drawing/Living room
-                                        mirrors</a></li>
-                                <li><a href="./Produtcts-List.html?category=Bathroom&cattype=types">Bathroom mirrors</a>
-                                </li>
-                                <li><a href="./Produtcts-List.html">Dressing mirrors</a></li>
-                                <li><a href="./Produtcts-List.html">Bedroom mirrors</a></li>
+                                <li><a href="./Produtcts-List.html?category=Living&cattype=category">Drawing/Living room
+                                    mirrors</a></li>
+                            <li><a href="./Produtcts-List.html?category=Bathroom&cattype=category">Bathroom mirrors</a>
+                            </li>
+                            <li><a href="./Produtcts-List.html?category=Dressing&cattype=category">Dressing mirrors</a></li>
+                            <li><a href="./Produtcts-List.html?category=Bedroom&cattype=category">Bedroom mirrors</a></li>
                                 <li class="add-category">
                                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                                         data-bs-target="#createCategory">
@@ -155,10 +155,6 @@
                             <span class="m-1 p-3">FILTER BY: </span>
 
                         </div>
-                        <div class="checkbox-filer m-2 p-3">
-                            <input type="checkbox" name="" id="checkboxAll" value="1">
-                            <label for="checkboxAll">All products</label>
-                        </div>
                         <h2 class="accordion-header" id="flush-room__mirrors">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseRoom__mirrors" aria-expanded="true"
@@ -170,19 +166,19 @@
                             aria-labelledby="flush-room__mirrors">
                             <div class="accordion-body">
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxDrawing" class="types" value="Living">
+                                    <input type="checkbox" name="" id="checkboxDrawing" class="category" onclick="filter()" value="Living">
                                     <label for="checkboxDrawing">Drawing/Living room mirrors</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxBathroom" class="types" value="Bathroom">
+                                    <input type="checkbox" name="" id="checkboxBathroom" class="category" onclick="filter()" value="Bathroom">
                                     <label for="checkboxBathroom">Bathroom mirrors</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxDressing" class="types" value="Dressing">
+                                    <input type="checkbox" name="" id="checkboxDressing" class="category" onclick="filter()" value="Dressing">
                                     <label for="checkboxDressing">Dressing mirrors</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxBedroom" class="types" value="Bedroom">
+                                    <input type="checkbox" name="" id="checkboxBedroom" class="category" onclick="filter()" value="Bedroom">
                                     <label for="checkboxBedroom">Bedroom mirrors</label>
                                 </div>
                             </div>
@@ -200,29 +196,29 @@
                             aria-labelledby="flush-material">
                             <div class="accordion-body">
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxWooden" class="materials" value="Wooden">
+                                    <input type="checkbox" name="" id="checkboxWooden" class="materials" onclick="filter()" value="Wooden">
                                     <label for="checkboxWooden">Wooden framed</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxAcrylic" class="materials"
+                                    <input type="checkbox" name="" id="checkboxAcrylic" class="materials" onclick="filter()"
                                         value="Acrylic">
                                     <label for="checkboxAcrylic">Acrylic framed</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxMetal" class="materials" value="Metal">
+                                    <input type="checkbox" name="" id="checkboxMetal" class="materials" onclick="filter()" value="Metal">
                                     <label for="checkboxMetal">Metal framed</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxDecorative" class="materials"
+                                    <input type="checkbox" name="" id="checkboxDecorative" class="materials" onclick="filter()"
                                         value="Decorative">
                                     <label for="checkboxDecorative">Decorative mirrors</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxLED" class="materials" value="LED">
+                                    <input type="checkbox" name="" id="checkboxLED" class="materials" onclick="filter()" value="LED">
                                     <label for="checkboxLED">LED mirrors</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="checkboxBluetooth" class="materials"
+                                    <input type="checkbox" name="" id="checkboxBluetooth" class="materials" onclick="filter()"
                                         value="Bluetooth">
                                     <label for="checkboxBluetooth">Bluetooth mirrors</label>
                                 </div>
@@ -240,24 +236,24 @@
                         <div id="flush-collapseShape" class="accordion-collapse collapse" aria-labelledby="flush-shape">
                             <div class="accordion-body">
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Rectangular" class="shape" value="Rectangular">
-                                    <label for="checkboxCircle">Rectangular</label>
+                                    <input type="checkbox" name="" id="Rectangular" class="shape" onclick="filter2(this.id,'shape')" value="Rectangular">
+                                    <label for="Rectangular">Rectangular</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Oval" class="shape" value="Oval">
-                                    <label for="checkboxSquare">Oval</label>
+                                    <input type="checkbox" name="" id="Oval" class="shape" onclick="filter2(this.id,'shape')" value="Oval">
+                                    <label for="Oval">Oval</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Round" class="shape" value="Round">
-                                    <label for="checkboxEllipse">Round</label>
+                                    <input type="checkbox" name="" id="Round" class="shape" onclick="filter2(this.id,'shape')" value="Round">
+                                    <label for="Round">Round</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Hexagonal" class="shape" value="Hexagonal">
-                                    <label for="checkboxEllipse">Hexagonal</label>
+                                    <input type="checkbox" name="" id="Hexagonal" class="shape" onclick="filter2(this.id,'shape')" value="Hexagonal">
+                                    <label for="Hexagonal">Hexagonal</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Sunburst" class="shape" value="Sunburst">
-                                    <label for="checkboxEllipse">Sunburst</label>
+                                    <input type="checkbox" name="" id="Sunburst" class="shape" onclick="filter2(this.id,'shape')" value="Sunburst">
+                                    <label for="Sunburst">Sunburst</label>
                                 </div>
                             </div>
                         </div>
@@ -273,12 +269,12 @@
                         <div id="flush-collapsePrice" class="accordion-collapse collapse" aria-labelledby="flush-price">
                             <div class="accordion-body">
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Lowtohigh" class="price" value="Lowtohigh">
-                                    <label for="checkboxLowtohigh">From low to high</label>
+                                    <input type="checkbox" name="" id="Lowtohigh" class="price" onclick="filter2(this.id,'price')" value="Lowtohigh">
+                                    <label for="Lowtohigh">From low to high</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Hightolow" class="price" value="Hightolow">
-                                    <label for="checkboxHightolow">From high to low</label>
+                                    <input type="checkbox" name="" id="Hightolow" class="price" onclick="filter2(this.id,'price')" value="Hightolow">
+                                    <label for="Hightolow">From high to low</label>
                                 </div>
                             </div>
                         </div>

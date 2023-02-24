@@ -278,7 +278,7 @@ window.listProducts = [
 			origin: 595,
 			sale: 546,
 		},
-		shape:'Round',
+		shape:'Rectangular',
 		materials: ['Decorative','Acrylic bordered'],
 		detailShort: 'Crush Diamond Mirrors Wall Decor, Silver Decorative Mirrors for Living Room Decor, Bedroom, Bathroom',
 		detail: 'This is a mirror with crystal decor, a circle of crush diamonds, The shining mirror covered the diamonds and is very easy to clean. It\'s really cute and gorgeous.This silver wall decor can hangs horizontally or vertically，can also hang the mirror on the wall with chains. Hanging hardware and chains are included. It\'s pretty sturdy and it looks great.',

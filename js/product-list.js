@@ -2,6 +2,7 @@ let listProducts=window.listProducts;
 const query=window.location.search;
 const urlparam=new URLSearchParams(query);
 let products=[];
+let products_sort=[];
 let cattpye=urlparam.get('cattype');
 switch(cattpye){
     case 'types':
@@ -16,6 +17,7 @@ switch(cattpye){
             }
             if(check){
                 products[products.length]=listProducts[i];
+                products_sort[products_sort.length]=listProducts[i];
             }
         }
         break;
@@ -67,6 +69,7 @@ switch(cattpye){
             }
             if(check){
                products[products.length]=listProducts[i];
+               products_sort[products_sort.length]=listProducts[i];
             }
         }
         break;
@@ -82,8 +85,10 @@ switch(cattpye){
             }
             if(check){
                 products[products.length]=listProducts[i];
+                products_sort[products_sort.length]=listProducts[i];
             }
         }
+       checkfilter(material);
         break;
     case 'category':
             let category=urlparam.get('category').toLowerCase();
@@ -97,14 +102,16 @@ switch(cattpye){
                 }
                 if(check){
                     products[products.length]=listProducts[i];
+                    products_sort[products_sort.length]=listProducts[i];
                 }
             }
+            checkfilter(category);
             break; 
 }
 function loop(){
     document.getElementById('products').innerHTML='';
     for(var i=0;i<products.length;i++){
-        document.getElementById('products').innerHTML+='<li>'+
+        document.getElementById('products').innerHTML+='<li id="'+products[i].id+'">'+
         '<div class="product-item">'+
             '<div class="product-top">'+
                 '<a href="./Detail.html?id='+products[i].id+'" class="product-thumb">'+
@@ -123,59 +130,129 @@ function loop(){
 }
 loop();
 function filter(){
-    
-    let materials=document.getElementsByClassName('materials');
-    let shape=document.getElementsByClassName('shape');
-    let price=document.getElementsByClassName('price');
-    
-
+    for(var i=0;i<products.length;i++){
+        document.getElementById(products[i].id).style.display='block';
+    }
+    filter_category();
+    filter_materials();
+    filter_shape();
 }
-function filter_types() {
-    let types=document.getElementsByClassName('types');
-    let remove=[];
-    for(var j=0;j<types.length;j++){
-        if(types[j].checked){
+function filter2(id,type){
+   let checkbox=document.getElementsByClassName(type);
+   for(var i=0;i<checkbox.length;i++){
+      if(checkbox[i].value!=document.getElementById(id).value){
+        checkbox[i].checked=false;
+      }
+   }
+   if(type=='price'){
+      filter_price();
+   }
+   filter();
+}
+function filter_category() {
+    let category=document.getElementsByClassName('category');
+    for(var j=0;j<category.length;j++){
+        if(category[j].checked){
             for(var i=0;i<products.length;i++){
-                let check=false;
-                for(var k=0;k<products[i].types.length;k++){
-                    if(types[j].value.toLowerCase().includes(products[i].types[k].toLowerCase())){
-                        check=true;
+                if(document.getElementById(products[i].id).style.display=='block'){
+                    let check=false;
+                    for(var k=0;k<products[i].category.length;k++){
+                        if(products[i].category[k].toLowerCase().includes(category[j].value.toLowerCase())){
+                            check=true;
+                            break;
+                        }
                     }
-                }
-                if(check==false){
-                    remove[remove.length]=i;
-                }
+                    if(check==false){
+                        document.getElementById(products[i].id).style.display='none';
+                    }
+                } 
             }
-            for(var i=0;i<remove.length;i++){
-                products.splice(remove[i],1);
-            }
-            remove=[];
         }
     } 
 }
 
 function filter_materials() {
     let materials=document.getElementsByClassName('materials');
-    let remove=[];
     for(var j=0;j<materials.length;j++){
         if(materials[j].checked){
-           for(var i=0;i<products.length;i++){
-            let check=false;
-            for(var k=0;k<products[i].materials.length;k++){
-                if(materials[j].value.toLowerCase().includes(products[i].materials[k].toLowerCase())){
-                    check=true;
+          for(var i=0;i<products.length;i++){
+            if(document.getElementById(products[i].id).style.display=='block'){
+                let check=false;
+                for(var k=0;k<products[i].materials.length;k++){
+                    if(products[i].materials[k].toLowerCase().includes(materials[j].value.toLowerCase())){
+                        check=true;
+                        break;
+                    }
+                }
+                if(check==false){
+                    document.getElementById(products[i].id).style.display='none';
                 }
             }
-            if(check==false){
-                remove[remove.length]=i;
+          }
+        }
+    }
+}
+
+function filter_shape(){
+    let shape=document.getElementsByClassName('shape');
+    for(var j=0;j<shape.length;j++){
+        if(shape[j].checked){
+          for(var i=0;i<products.length;i++){
+            if(document.getElementById(products[i].id).style.display=='block'){
+                let check=false;
+                if(products[i].shape.toLowerCase().includes(shape[j].value.toLowerCase())){
+                    check=true;
+                }
+                if(check==false){
+                    document.getElementById(products[i].id).style.display='none';
+                }
             }
-          }   
-        for(var i=0;i<remove.length;i++){
-            products.splice(remove[i],1);
+          }
+          break;
         }
-        remove=[];
+    }
+}
+
+function filter_price(){
+    let price=document.getElementsByClassName('price');
+    var check=false;
+    for(var j=0;j<price.length;j++){
+        if(price[j].checked){
+          check=true;
+          for(var i=0;i<products.length;i++){
+              for(var k=(i+1);k<products.length;k++){
+                  if(price[j].value=='Lowtohigh'){
+                    if(products[i].price.sale>products[k].price.sale){
+                        var product=products[i];
+                        products[i]=products[k];
+                        products[k]=product;
+                    }
+                  }
+                  else{
+                    if(products[i].price.sale<products[k].price.sale){
+                        var product=products[i];
+                        products[i]=products[k];
+                        products[k]=product;
+                    }
+                  }
+              }
+          }
+          
+          break;
         }
-    } 
+    }
+    if(check==false){
+       products=products_sort.slice(0);
+    }
+    loop();
+}
+function checkfilter(value){
+  let checkbox=document.getElementsByClassName('checkbox-filer');
+  for(var i=0;i<checkbox.length;i++){
+    if(checkbox[i].getElementsByTagName('input')[0].value.toLowerCase()==value){
+        checkbox[i].style.display='none';
+    }
+  }
 }
 
 
