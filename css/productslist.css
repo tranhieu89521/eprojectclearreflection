@@ -60,6 +60,7 @@
 .content-product .payment-button{
     width: 30%;
     position: relative;
+    margin: 0 10px;
 }
 .content-product .payment-button a{
     top: 50%;
@@ -67,5 +68,9 @@
     position: absolute;
 }
 .card .card-img-top{
-    object-fit: cover;
+    object-fit: scale-down;
+    height: 300px;
+}
+.card{
+    height: 600px;
 }
