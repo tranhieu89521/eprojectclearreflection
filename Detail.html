@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clear Reflections</title>
+  <title>Clear Reflections | Detail</title>
   <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/HomePage.css">
@@ -125,14 +125,14 @@
     <div class="col-sm-12">
       <div>
         <div class="row mb-3">
-          <div class="col-sm-7">
+          <div class="col-sm-6">
             <div id="image"></div>
             <div id="slide-wrapper">
               <div id="slider">
               </div>
             </div>
           </div>
-          <div class="col-sm-5">
+          <div class="col-sm-6">
             <h2 id="name" class="name__product mt-2"></h2>
             <div class="payment-section">
               <div class="payment-price">
@@ -183,81 +183,7 @@
       <!-- Slideshow Related Product -->
       <div class="related-product mb-3">
         <div id="relate" class="row">
-          <div class="col-md-3">
-            <div class="card " style="width: 100%;">
-              <a href="./Produtcts-List.html">
-                <img src="./image/MW19103.jpg" class="card-img-top">
-              </a>
-              <div class="card-body">
-                <div class="description-body">
-                  <div class="text-description">
-                    <p>
-                      <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
-                    </p>
-                    <p class="card-text">When bigger is better</p>
-                  </div>
-                  <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card" style="width: 100%;">
-              <a href="./Produtcts-List.html">
-                <img src="./image/MW19103.jpg" class="card-img-top">
-              </a>
-              <div class="card-body">
-                <div class="description-body">
-                  <div class="text-description">
-                    <p>
-                      <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
-                    </p>
-                    <p class="card-text">When bigger is better</p>
-                  </div>
-                  <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card" style="width: 100%;">
-              <a href="./Produtcts-List.html">
-                <img src="./image/MW19103.jpg" class="card-img-top">
-              </a>
-              <div class="card-body">
-                <div class="description-body">
-                  <div class="text-description">
-                    <p>
-                      <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
-                    </p>
-                    <p class="card-text">When bigger is better</p>
-                  </div>
-                  <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card " style="width: 100%;">
-              <a href="./Produtcts-List.html">
-                <img src="./image/MW19103.jpg" class="card-img-top">
-              </a>
-              <div class="card-body">
-                <div class="description-body">
-                  <div class="text-description">
-                    <p>
-                      <a href="./Produtcts-List.html">LEANER & FULL LENGTH</a>
-                    </p>
-                    <p class="card-text">When bigger is better</p>
-                  </div>
-                  <a href="./Produtcts-List.html" class="button-exlore button">Explore</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
 
@@ -311,29 +237,6 @@
     </div>
   </div>
 </div>
-
-
-<script type="text/javascript">
-  let thumbnails = document.getElementsByClassName('thumbnail')
-
-  let activeImages = document.getElementsByClassName('active')
-
-  for (var i = 0; i < thumbnails.length; i++) {
-
-    thumbnails[i].addEventListener('mouseover', function () {
-      console.log(activeImages)
-
-      if (activeImages.length > 0) {
-        activeImages[0].classList.remove('active')
-      }
-
-
-      this.classList.add('active')
-      document.getElementById('featured').src = this.src
-    })
-  }
-
-</script>
 <script src="./js/Detail.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>

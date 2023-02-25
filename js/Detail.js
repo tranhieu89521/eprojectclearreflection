@@ -4,6 +4,25 @@ const urlparam=new URLSearchParams(query);
 let id=urlparam.get('id');
 let product=listProducts[id-1];
 let relate=[];
+
+let thumbnails = document.getElementsByClassName('thumbnail');
+
+let activeImages = document.getElementsByClassName('active');
+
+for (var i = 0; i < thumbnails.length; i++) {
+
+  thumbnails[i].addEventListener('mouseover', function () {
+    console.log(activeImages)
+
+    if (activeImages.length > 0) {
+      activeImages[0].classList.remove('active')
+    }
+
+
+    this.classList.add('active')
+    document.getElementById('image').src = this.src
+  })
+}
 document.getElementById('image').innerHTML='<img src="'+product.img[0]+'">';
 let string_slider='<img class="thumbnail active" src="'+product.img[0]+'">';
 for(var i=1;i<product.img.length;i++){
@@ -57,7 +76,7 @@ for(var i=0;i<listProducts.length;i++){
 document.getElementById('relate').innerHTML='';
 for(var i=0;i<4;i++){
     document.getElementById('relate').innerHTML+='<div class="col-md-3">'+
-    '<div class="card " style="width: 100%;">'+
+    '<div class="card mb-3" style="width: 100%;">'+
       '<a href="./Detail.html?id='+relate[i].id+'">'+
         '<img src="'+relate[i].img[0]+'" class="card-img-top">'+
       '</a>'+
