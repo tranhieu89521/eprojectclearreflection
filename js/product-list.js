@@ -3,6 +3,7 @@ const query=window.location.search;
 const urlparam=new URLSearchParams(query);
 let products=[];
 let products_sort=[];
+let page=[];
 let cattpye=urlparam.get('cattype');
 switch(cattpye){
     case 'types':
@@ -151,9 +152,12 @@ function loop(){
         '</div>'+
     '</div>';
     document.getElementById('products').innerHTML+=string;
+    document.getElementById(products[i].id).style.display='block';
     }
 }
 loop();
+page1();
+page_number(1);
 function filter(){
     for(var i=0;i<products.length;i++){
         document.getElementById(products[i].id).style.display='block';
@@ -161,6 +165,8 @@ function filter(){
     filter_category();
     filter_materials();
     filter_shape();
+    page1();
+    page_number(1);
 }
 function filter2(id,type){
    let checkbox=document.getElementsByClassName(type);
@@ -279,6 +285,41 @@ function checkfilter(value){
     }
   }
 }
-
+function page1(){
+    page=[];
+    for(var i=0;i<products.length;i++){
+        if(document.getElementById(products[i].id).style.display=='block'){
+            page[page.length]=i;
+        }
+    }
+    var number_page;
+    if((page.length%9)==0){
+        number_page=page.length/9;
+    }
+    else{
+        number_page=((page.length-(page.length%9))/9)+1;
+    }
+    document.getElementById('page').innerHTML='';
+    if(number_page>1){
+        for(var i=1;i<=number_page;i++){
+            document.getElementById('page').innerHTML+='<li class="page-item"><button class="page-link" onclick="page_number('+i+')">'+i+'</button></li>';
+        }
+    }
+}
+function page_number(number){
+    var end=number*9;
+    if(end>page.length){
+         end=page.length;
+    }
+    display_page();
+    for(var i=((number-1)*9);i<end;i++){
+        document.getElementById(products[page[i]].id).style.display='block';
+    }
+}
+function display_page(){
+    for(var i=0;i<products.length;i++){
+         document.getElementById(products[i].id).style.display='none';
+    }
+}
 
 

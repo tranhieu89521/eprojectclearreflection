@@ -37,56 +37,41 @@ document.getElementById('dep').innerHTML=product.detail;
 for(var i=0;i<listProducts.length;i++){
     if(listProducts[i].id!=id){
         for(var j=0;j<listProducts[i].category.length;j++){
+          var check=false;
             for(var k=0;k<product.category.length;k++){
                 if(listProducts[i].category[j]==product.category[k]){
                     relate[relate.length]=listProducts[i];  
+                    check=true;
+                    break;
                 }
+            }
+            if(check){
+              break;
             }
         }
     }
-    if(relate.length==5){
+   if(relate.length==4){
         break;
-    }
+   }
 }
-document.getElementById('relate').innerHTML='<div class="carousel-item active">'+
-'<div class="col-md-3 m-1">'+
-  '<div class="card p-1" style="width: 90%;">'+
-    '<a href="./Detail.html?id='+relate[0].id+'">'+
-      '<img src="'+relate[0].img[0]+'" class="card-img-top">'+
-    '</a>'+
-    '<div class="card-body">'+
-      '<div class="description-body">'+
-        '<div class="text-description">'+
-          '<p>'+
-            '<a href="./Detail.html?id='+relate[0].id+'">'+relate[0].name+'</a>'+
-          '</p>'+
-          '<p class="card-text">'+relate[0].detailShort+'</p>'+
+document.getElementById('relate').innerHTML='';
+for(var i=0;i<4;i++){
+    document.getElementById('relate').innerHTML+='<div class="col-md-3">'+
+    '<div class="card " style="width: 100%;">'+
+      '<a href="./Detail.html?id='+relate[i].id+'">'+
+        '<img src="'+relate[i].img[0]+'" class="card-img-top">'+
+      '</a>'+
+      '<div class="card-body">'+
+        '<div class="description-body">'+
+          '<div class="text-description">'+
+           '<p>'+
+              '<a href="./Detail.html?id='+relate[i].id+'">'+relate[i].name+'</a>'+
+            '</p>'+
+            '<p class="card-text">'+relate[i].detailShort+'</p>'+
+          '</div>'+
+          '<a href="./Detail.html?id='+relate[i].id+'" class="button-exlore button">Explore</a>'+
         '</div>'+
-        '<a href="./Detail.html?id='+relate[0].id+'" class="button-exlore button">Explore</a>'+
       '</div>'+
     '</div>'+
-  '</div>'+
-'</div>'+
-'</div>';
-for(var i=1;i<relate.length;i++){
-    document.getElementById('relate').innerHTML+='<div class="carousel-item">'+
-'<div class="col-md-3 m-1">'+
-  '<div class="card p-1" style="width: 90%;">'+
-    '<a href="./Detail.html?id='+relate[i].id+'">'+
-      '<img src="'+relate[i].img[0]+'" class="card-img-top">'+
-    '</a>'+
-    '<div class="card-body">'+
-      '<div class="description-body">'+
-        '<div class="text-description">'+
-          '<p>'+
-            '<a href="./Detail.html?id='+relate[i].id+'">'+relate[i].name+'</a>'+
-          '</p>'+
-          '<p class="card-text">'+relate[i].detailShort+'</p>'+
-        '</div>'+
-        '<a href="./Detail.html?id='+relate[i].id+'" class="button-exlore button">Explore</a>'+
-      '</div>'+
-    '</div>'+
-  '</div>'+
-'</div>'+
-'</div>';
+  '</div>';
 }
