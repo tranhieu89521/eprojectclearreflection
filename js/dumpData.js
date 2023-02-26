@@ -2,7 +2,7 @@ window.listProducts = [
 	{
 		id: 1,
 		name: 'KRISTALLUM Backlit Bathroom Mirror with Lights',
-		types: ['Trendy', 'Best_Seller','Modern'],
+		types: ['Trendy','Best_Seller','Modern'],
 		category: ['Bathroom'],
 		price: {
 			origin: 900,
@@ -17,7 +17,7 @@ window.listProducts = [
 	{
 		id: 2,
 		name: 'SNUGACE Single Beveled Edge Frameless Wall Mount Bathroom Vanity Mirror',
-		types: ['Trendy'],
+		types: ['Trendy','Modern'],
 		category: ['Bathroom'],
 		price: {
 			origin: 579,
@@ -25,15 +25,15 @@ window.listProducts = [
 		},
 		shape:'Oval',
 		materials: ['Metal bordered','Decorative','Glass'],
-		detailShort: '',
+		detailShort: 'Modern design,Safe and easy to install',
 		detail: 'Copper-free silver mirror, environmentally friendly, much less corrosion rate compared with normal silver mirrors used by most brands, hanging both horizontally and vertically',
 		img: ['./image/Bathroom/6172sSgnYtL._AC_UL480_QL65_.jpg','./image/Bathroom/6172sSgnYtL.jpg', './image/Bathroom/AC_UF8940_QL80_.jpg']
 	},
 	{
 		id: 3,
 		name: 'ANDY STAR Chrome Mirror for Bathroom',
-		types: [''],
-		category: ['Bathroom'],
+		types: ['Best_Seller'],
+		category: ['Bathroom','Dressing Room'],
 		price: {
 			origin: 790,
 			sale: 700,
@@ -47,7 +47,7 @@ window.listProducts = [
 	{
 		id: 4,
 		name: 'oruii Round Mirror',
-		types: [''],
+		types: ['Trendy'],
 		category: ['Living Room','Hallway','Dining Room'],
 		price: {
 			origin: 670,
@@ -62,8 +62,8 @@ window.listProducts = [
     {
 		id: 5,
 		name: 'CASSILANDO Arched Mirror',
-		types: [''],
-		category: ['Living Room'],
+		types: ['Best_Seller'],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 970,
 			sale: 890,
@@ -92,7 +92,7 @@ window.listProducts = [
 	{
 		id: 7,
 		name: 'MIOZON Backlit Mirror',
-		types: ['Modern'],
+		types: ['Modern','Best_Seller'],
 		category: ['Bathroom'],
 		price: {
 			origin: 589,
@@ -107,8 +107,8 @@ window.listProducts = [
 	{
 		id: 8,
 		name: 'Arcus Home Black Bathroom Mirror',
-		types: [''],
-		category: ['Bathroom'],
+		types: ['Trendy'],
+		category: ['Bathroom','Dressing Room'],
 		price: {
 			origin: 489,
 			sale: 460,
@@ -137,7 +137,7 @@ window.listProducts = [
 	{
 		id: 10,
 		name: 'NEUWEABY Black Oval Mirror for Bathroom',
-		types: [''],
+		types: ['Best_Seller'],
 		category: ['Bathroom'],
 		price: {
 			origin: 690,
@@ -152,7 +152,7 @@ window.listProducts = [
 	{
 		id: 11,
 		name: 'Growsun Black Round Mirror',
-		types: [''],
+		types: ['Trendy'],
 		category: ['Living Room'],
 		price: {
 			origin: 960,
@@ -182,7 +182,7 @@ window.listProducts = [
 	{
 		id: 13,
 		name: 'Koonmi Black Bathrooms Mirror for Wall',
-		types: [''],
+		types: ['Trendy','Best_Seller'],
 		category: ['Bathroom'],
 		price: {
 			origin: 710,
@@ -198,10 +198,10 @@ window.listProducts = [
 		id: 14,
 		name: 'Ruomeng Rectangular Wall Mirror',
 		types: [''],
-		category: ['Living Room'],
+		category: ['Living Room','Bedroom'],
 		price: {
-			origin: 570,
-			sale: 437,
+			origin: 123,
+			sale: 100,
 		},
 		shape:'Rectangular',
 		materials: ['Glass', 'Polystyrene','Acrylic bordered'],
@@ -213,7 +213,7 @@ window.listProducts = [
 		id: 15,
 		name: 'Black Wall Framed Rectangular Mirrors for Bathrooms',
 		types: [''],
-		category: ['Bathroom'],
+		category: ['Bathroom','Dressing Room','Bedroom'],
 		price: {
 			origin: 827,
 			sale: 600,
@@ -227,7 +227,7 @@ window.listProducts = [
 	{
 		id: 16,
 		name: 'Manocorro Black Oval Wall Mirror',
-		types: [''],
+		types: ['Trendy'],
 		category: ['Bathroom'],
 		price: {
 			origin: 628,
@@ -257,7 +257,7 @@ window.listProducts = [
 	{
 		id: 18,
 		name: 'OKPAL 72X32 INCH RGB LED Bathroom Mirror',
-		types: [''],
+		types: ['Best_Seller'],
 		category: ['Bathroom'],
 		price: {
 			origin: 990,
@@ -272,7 +272,7 @@ window.listProducts = [
 	{
 		id: 19,
 		name: 'XIHACTY 2 Piece Wall Mirrors',
-		types: ['Diamond'],
+		types: ['Diamond','Trendy'],
 		category: ['Living Room'],
 		price: {
 			origin: 595,
@@ -302,7 +302,7 @@ window.listProducts = [
 	{
 		id: 21,
 		name: 'Kemmandi 10 Pieces Hexagonal Mirror Wall Mirror',
-		types: [''],
+		types: ['Best_Seller'],
 		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 846,
@@ -317,8 +317,8 @@ window.listProducts = [
 	{
 		id: 22,
 		name: 'HA Black&Gold Framed Rectangle Bathroom Mirrors for Wall',
-		types: [''],
-		category: ['Living Room'],
+		types: ['Trendy'],
+		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 245,
 			sale: 145,
@@ -332,7 +332,7 @@ window.listProducts = [
 	{
 		id: 23,
 		name: 'Vaabee Family Tree Wall Decor Acrylic 3D DIY Mirror',
-		types: ['Modern'],
+		types: ['Modern','Best_Seller'],
 		category: ['Living Room','Bedroom', 'Dinning Room'],
 		price: {
 			origin: 642,
@@ -362,7 +362,7 @@ window.listProducts = [
 	{
 		id: 25,
 		name: 'Honiway Wall Mirror',
-		types: [''],
+		types: ['Trendy'],
 		category: ['Living Room','Bedroom'],
 		price: {
 			origin: 757,
@@ -378,7 +378,7 @@ window.listProducts = [
 		id: 26,
 		name: 'Framed Bevel Leaner Full Length Huge Floor Mirror',
 		types: ['Modern'],
-		category: ['Living Room','Bedroom'],
+		category: ['Living Room','Bedroom','Dressing Room'],
 		price: {
 			origin: 467,
 			sale: 450,
@@ -404,5 +404,80 @@ window.listProducts = [
 		detail: 'The 63" x18" large dressing mirror can let you see yourself with one glance, full length mirror will suit your needs! These floor mirrors have three colors for you to choose from: gold, black, silver, you can put them on the living room, bedroom, dressing room, closets, foyer, corridor, etc.',
 		img: ['./image/Living/61nIq4kOjLL._AC_UL480_QL65_.jpg', './image/Bathroom/91pVCVUL320_.jpg', './image/Bathroom/61nIq4kO0_.jpg']
 	},
+	{
+		id: 28,
+		name: 'BEAUTME Vanity Mirror with LED Backlit Lights',
+		types: ['Trendy','Best_Seller'],
+		category: ['Dressing Room','Bedroom'],
+		price: {
+			origin: 354,
+			sale: 345,
+		},
+		shape:'Square',
+		materials: ['Aluminum','Metal bordered','LED'],
+		detailShort: 'Lighted Tabletop Hollywood Makeup Mirror for Dressing Room & Bedroom,3 Color Modes with Dimmer,Silver',
+		detail: 'Tabletop mirror - for table top use, the mirror includes a base and hardware kits that can easily be installed or removed. So you can set the mirror on a vanity or makeup table for best use per your reference. with its simply elegantly design, it surely a perfect complement for home or business, like modern style house and stylish salon or studio.',
+		img: ['./image/Living/51zC4K4-GDL._AC_SX679_.jpg', './image/Living/51PG8f+LWvL._AC_SX679_.jpg', './image/Living/614R0ANhxlL._AC_SX679_.jpg']
+	},
+	{
+		id: 29,
+		name: 'Laiya 65”24” LED Aluminum Full Length Mirror',
+		types: ['Modern'],
+		category: ['Dressing Room','Bedroom','Living Room'],
+		price: {
+			origin: 890,
+			sale: 870,
+		},
+		shape:'Rectangular',
+		materials: ['Aluminum','Acrylic bordered','LED'],
+		detailShort: 'Floor Mirrors with Stand Full Body Dressing Bedroom,Living Room,Dressing Room Hotel Mirror Big Size Safe with Touch Button',
+		detail: 'Big size with sturdy stand,place it at will, and adjust the position automatically according to needs,safe and stable bracket, not easy to turn over.There is also a hook hole design, you can choose to stand or place it on the wall according to requirements.',
+		img: ['./image/Living/81dNn0GLXkL._AC_SX679_.jpg', './image/Living/61mTheGIfsL._AC_SX679_.jpg', './image/Living/61S1np1yemL._AC_SX679_.jpg']
+	},
+	{
+		id: 30,
+		name: 'NeuType LED Mirror Full Length Dressing Mirror',
+		types: ['Best_Seller'],
+		category: ['Dressing Room','Bedroom','Bathroom'],
+		price: {
+			origin: 456,
+			sale: 430,
+		},
+		shape:'Rectangular',
+		materials: ['Aluminum','Acrylic bordered','LED'],
+		detailShort: 'Large Rectangle Bedroom Bathroom Living Room Mirrors with Touch Button and Plug, Dimmable Lighting, Stepless Dimming, Burst-proof Glass, Anti-fog',
+		detail: 'Full size, large enough for you to see your entire outfit in a single glance. Copper-free silver mirror, environmentally friendly. Coating with silver nitrate, anti-rust treatment, not easy to oxidize and rust. Anti-fog function, eliminate fog automatically, no more worry about the steam. Multi-layered, more protection, fully compliant with EU standards. Original edge-sealing technology, lasting and more durable.',
+		img: ['./image/Living/61fkXqjPbYL._AC_SX679_.jpg', './image/Living/61NyKr+KowL._AC_SX679_.jpg', './image/Living/61KQ+AgYJqL._AC_SX679_.jpg']
+	},
+	{
+		id: 31,
+		name: 'LFT HUIMEI2Y Door Full Length Mirror',
+		types: ['Trendy'],
+		category: ['Dressing Room','Bedroom','Bathroom'],
+		price: {
+			origin: 156,
+			sale: 148,
+		},
+		shape:'Rectangular',
+		materials: ['Wooden framed'],
+		detailShort: 'Wall-Mounted Closet Door Mirrors Full Body Wall Mirror Rectangle Tall for Bedroom, Living Room, Dressing Room - Gold 50" x14" with Engraving Frame',
+		detail: ' In order to increase the exquisiteness of the wall mirror, our wall-mounted mirror with engraving frame. PS frame will prevent the mirror from being deformed and be more environmentally friendly. Compared with other full-length mirrors, the mirrors are more beautiful and suitable as wall mirrors to decorate your room.',
+		img: ['./image/Living/61-OLXSRpxL._AC_SX679_.jpg', './image/Living/71F+6BGflnL._AC_SX679_.jpg', './image/Living/71QeTbJ6SEL._AC_SX679_.jpg']
+	},
+	{
+		id: 32,
+		name: 'TheiaMo Oval Full Length Mirror',
+		types: ['Classic','Best_Seller'],
+		category: ['Dressing Room','Bedroom','Bathroom'],
+		price: {
+			origin: 457,
+			sale: 430,
+		},
+		shape:'Oval',
+		materials: ['Metal bordered','Glass', 'Aluminium'],
+		detailShort: 'Wall-Mounted Floor Mirror with Metal Frame, Ultra-Clear Explosion-Proof Dressing Mirror, Simple and Classic Deco for Cloakroom/Bedroom/Living Room, Gold',
+		detail: 'TheiaMo wall mounted mirror features high quality glass and metal finishs with metal hooks and decorative frames for your living room. This is a safe accent wall mirror that complements your wall space. Its simple&classic design stands out so it can be easily matched with any décor.',
+		img: ['./image/Living/71iZ-FBr5HL._AC_SX679_.jpg', './image/Living/71WNtm7KO4L._AC_SX679_.jpg', './image/Living/71sr20VqAfL._AC_SX679_.jpg']
+	}
 ];
 
