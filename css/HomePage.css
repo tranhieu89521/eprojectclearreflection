@@ -55,7 +55,7 @@
 }
 
 .home-introduce {
-    background-image: url(/image/background-image.png);
+    background-image: url(../image/background-image.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 560px;
@@ -141,7 +141,7 @@
     transition: transform .5s ease;
 }
 
-.home-content .card:hover {
+.home-content .card {
     box-shadow: 0 8px 8px -4px #89939E;
 }
 
@@ -245,4 +245,23 @@
 
 .feature .card {
     width: 33.3333333%;
+}
+.mail:hover{
+    text-decoration: underline;
+    color: var(--black);
+}
+.card{
+    overflow: hidden;
+}
+.card img{
+    object-fit: contain;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card img:hover{
+    -webkit-transform: scale(1.04);
+	transform: scale(1.04);
+    object-fit: contain;
 }

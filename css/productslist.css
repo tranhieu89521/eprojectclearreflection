@@ -67,10 +67,26 @@
     transform: translateY(-50%);
     position: absolute;
 }
-.card .card-img-top{
-    object-fit: scale-down;
-    height: 300px;
-}
 .card{
     height: 600px;
+    box-shadow: 0 8px 8px -4px #89939E;
+    overflow: hidden;
+}
+.card img{
+    height: 300px;
+    object-fit: contain;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card img:hover{
+    -webkit-transform: scale(1.04);
+	transform: scale(1.04);
+    object-fit: cover;
+}
+.filter{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }

@@ -270,3 +270,6 @@
     color: var(--black);
     border-color: var(--black);
 }
+.footer .mail{
+    color: var(--black);
+}
