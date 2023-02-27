@@ -83,7 +83,7 @@
 .card img:hover{
     -webkit-transform: scale(1.04);
 	transform: scale(1.04);
-    object-fit: cover;
+    object-fit: contain;
 }
 .filter{
     position: -webkit-sticky;
