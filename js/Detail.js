@@ -4,31 +4,7 @@ const urlparam=new URLSearchParams(query);
 let id=urlparam.get('id');
 let product=listProducts[id-1];
 let relate=[];
-
-let thumbnails = document.getElementsByClassName('thumbnail');
-
-let activeImages = document.getElementsByClassName('active');
-
-for (var i = 0; i < thumbnails.length; i++) {
-
-  thumbnails[i].addEventListener('mouseover', function () {
-    console.log(activeImages)
-
-    if (activeImages.length > 0) {
-      activeImages[0].classList.remove('active')
-    }
-
-
-    this.classList.add('active')
-    document.getElementById('image').src = this.src
-  })
-}
-document.getElementById('image').innerHTML='<img src="'+product.img[0]+'">';
-let string_slider='<img class="thumbnail active" src="'+product.img[0]+'">';
-for(var i=1;i<product.img.length;i++){
-    string_slider+='<img class="thumbnail" src="'+product.img[i]+'">';
-}
-document.getElementById('slider').innerHTML=string_slider;
+click_img(0);
 document.getElementById('name').innerHTML=product.name;
 document.getElementById('origin').innerHTML='<s>$'+product.price.origin+'</s>';
 document.getElementById('sale').innerHTML='$'+product.price.sale;
@@ -93,4 +69,17 @@ for(var i=0;i<4;i++){
       '</div>'+
     '</div>'+
   '</div>';
+}
+function click_img(p){
+  let string_slider='';
+  for(var i=0;i<product.img.length;i++){
+    if(i==p){
+      string_slider+='<img class="thumbnail active" onclick="click_img('+i+')" src="'+product.img[i]+'">';
+      document.getElementById('image').innerHTML='<img src="'+product.img[i]+'">';
+    }
+    else{
+      string_slider+='<img class="thumbnail" onclick="click_img('+i+')" src="'+product.img[i]+'">';
+    }
+  }
+  document.getElementById('slider').innerHTML=string_slider;
 }

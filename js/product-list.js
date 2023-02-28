@@ -5,6 +5,7 @@ let products=[];
 let products_sort=[];
 let page=[];
 let cattpye=urlparam.get('cattype');
+
 switch(cattpye){
     case 'types':
         let type=urlparam.get('category').toLowerCase();
@@ -108,6 +109,10 @@ switch(cattpye){
             }
             checkfilter(category);
             break; 
+    default:
+        for(var i=0;i<listProducts.length;i++){
+            products[products.length]=listProducts[i];
+        }
 }
 function loop(){
     document.getElementById('products').innerHTML='';
