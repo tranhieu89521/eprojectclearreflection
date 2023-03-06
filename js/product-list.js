@@ -74,6 +74,9 @@ switch(cattpye){
                products_sort[products_sort.length]=listProducts[i];
             }
         }
+        if(products.length==0){
+            document.getElementById('error').innerHTML='<div class="text-not-found"><h1>Product not found!</h1></div>';
+        }
         break;
     case 'material':
         let material=urlparam.get('category').toLowerCase();
@@ -170,6 +173,7 @@ function filter(){
     filter_category();
     filter_materials();
     filter_shape();
+    check_product();
     page1();
     page_number(1);
 }
@@ -325,6 +329,19 @@ function display_page(){
     for(var i=0;i<products.length;i++){
          document.getElementById(products[i].id).style.display='none';
     }
+}
+function check_product(){
+    var check=false;
+    document.getElementById('error').innerHTML='';
+    for(var i=0;i<products.length;i++){
+        if(document.getElementById(products[i].id).style.display=='block'){
+             check=true;
+             break;
+        }
+   }
+   if(check==false){
+    document.getElementById('error').innerHTML='<div class="text-not-found"><h1>Product not found!</h1></div>';
+   }
 }
 
 
