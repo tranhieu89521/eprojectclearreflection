@@ -284,11 +284,13 @@
                         <div id="flush-collapsePrice" class="accordion-collapse collapse" aria-labelledby="flush-price">
                             <div class="accordion-body">
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Lowtohigh" class="price" onclick="filter2(this.id,'price')" value="Lowtohigh">
+                                    <input type="checkbox" name="" id="Lowtohigh" class="price"
+                                        onclick="filter2(this.id,'price')" value="Lowtohigh">
                                     <label for="Lowtohigh">From low to high</label>
                                 </div>
                                 <div class="checkbox-filer m-2">
-                                    <input type="checkbox" name="" id="Hightolow" class="price" onclick="filter2(this.id,'price')" value="Hightolow">
+                                    <input type="checkbox" name="" id="Hightolow" class="price"
+                                        onclick="filter2(this.id,'price')" value="Hightolow">
                                     <label for="Hightolow">From high to low</label>
                                 </div>
                             </div>
@@ -302,189 +304,70 @@
             <div class="col-sm-9">
                 <div id="wrapper">
                     <div id="products" class="row m-1 mb-2">
-                        <div class="col-sm-4 mb-3">
-                            <div class="card">
-                                <a href="./Detail.html">
-                                    <img src="./image/Pristine-2.jpg" class="card-img-top">
-                                </a>
-                                <div class="card-body">
-                                    <div class="description-body">
-                                        <div class="tag-products">
-                                            <span class="badge text-bg-secondary">Category</span>
-                                            <span class="badge text-bg-secondary">Category</span>
-                                            <span class="badge text-bg-secondary">Category</span>
-                                        </div>
-                                        <div class="text-description">
-                                            <p class="name-product">
-                                                <a href="./Detail.html">
-                                                    LEANER & FULL LENGTH
-                                                </a>
-                                            </p>
-                                        </div>
-                                        <div class="content-product">
-                                            <div class="info-product">
-                                                <div class="price-product">
-                                                    <span class="origin-price m-1"><s>$150.00</s></span>
-                                                    <span class="sale-price m-1">$100.00</span>
-                                                </div>
-                                                <div class="decription-sumary">
-                                                    <p>
-                                                        As part of Bootstraps evolving CSS variables approach,
-                                                        badges now use local CSS variables on
-                                                        .badge for enhanced real-time customization.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="payment-button">
-                                                <a href="#" class="btn btn-dark">Buy now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-not-found">
+                            <h1>Product not found!</h1>
                         </div>
-                        <div class="col-sm-4 mb-3">
-                            <div class="card">
-                                <a href="./Detail.html">
-                                    <img src="./image/MW19103.jpg" class="card-img-top">
-                                </a>
-                                <div class="card-body">
-                                    <div class="description-body">
-                                        <div class="tag-products">
-                                            <span class="badge text-bg-secondary">Category</span>
-                                            <span class="badge text-bg-secondary">Category</span>
-                                            <span class="badge text-bg-secondary">Category</span>
-                                        </div>
-                                        <div class="text-description">
-                                            <p class="name-product">
-                                                <a href="./Detail.html">
-                                                    LEANER & FULL LENGTH
-                                                </a>
-                                            </p>
-                                        </div>
-                                        <div class="content-product">
-                                            <div class="info-product">
-                                                <div class="price-product">
-                                                    <span class="origin-price m-1"><s>$150.00</s></span>
-                                                    <span class="sale-price m-1">$100.00</span>
-                                                </div>
-                                                <div class="decription-sumary">
-                                                    <p>
-                                                        As part of Bootstraps evolving CSS variables approach,
-                                                        badges now use local CSS variables on
-                                                        .badge for enhanced real-time customization.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="payment-button">
-                                                <a href="#" class="btn btn-dark">Buy now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 mb-3">
-                            <div class="card">
-                                <a href="./Detail.html">
-                                    <img src="./image/MW19103.jpg" class="card-img-top">
-                                </a>
-                                <div class="card-body">
-                                    <div class="description-body">
-                                        <div class="tag-products">
-                                            <span class="badge text-bg-secondary">Category</span>
-                                            <span class="badge text-bg-secondary">Category</span>
-                                            <span class="badge text-bg-secondary">Category</span>
-                                        </div>
-                                        <div class="text-description">
-                                            <p class="name-product">
-                                                <a href="./Detail.html">
-                                                    LEANER & FULL LENGTH
-                                                </a>
-                                            </p>
-                                        </div>
-                                        <div class="content-product">
-                                            <div class="info-product">
-                                                <div class="price-product">
-                                                    <span class="origin-price m-1"><s>$150.00</s></span>
-                                                    <span class="sale-price m-1">$100.00</span>
-                                                </div>
-                                                <div class="decription-sumary">
-                                                    <p>
-                                                        As part of Bootstraps evolving CSS variables approach,
-                                                        badges now use local CSS variables on
-                                                        .badge for enhanced real-time customization.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="payment-button">
-                                                <a href="#" class="btn btn-dark">Buy now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
-                    
+                    <ul id="page" class="pagination">
+                    </ul>
                 </div>
-                <ul id="page" class="pagination">
-                </ul>
+                <!-- end product list -->
             </div>
-            <!-- end product list -->
+
+        </div>
+        <!-- End content -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="contact footer-item col-sm mb-2">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>175 Tay Son street, Dong Da district, Hanoi,
+                                Vietnam
+                            </li>
+                            <li>
+                                <a href="mailto:info@aptech.vn" class="mail">
+                                    <i class="fa fa-envelope" style="width:30px"> </i>
+                                    info@aptech.vn<br></a>
+                            </li>
+                            <li><i class="fas fa-phone"></i>+84 382020858</li>
+                        </ul>
+                    </div>
+                    <div class="social footer-item col-sm mb-2">
+                        <h3>Follow Us</h3>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <div class="product footer-item col-sm mb-2">
+                        <h3>Company Info</h3>
+                        <ul>
+                            <li><a href="./Contact.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-info footer-item col-sm mb-2">
+                        <h3>Purchase Info</h3>
+                        <ul>
+                            <li><a href="#">Payment Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <!-- End content -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="contact footer-item col-sm mb-2">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i>175 Tay Son street, Dong Da district, Hanoi, Vietnam
-                        </li>
-                        <li>
-                            <a href="mailto:info@aptech.vn" class="mail">
-                            <i class="fa fa-envelope" style="width:30px"> </i> 
-                            info@aptech.vn<br></a>
-                        </li>
-                        <li><i class="fas fa-phone"></i>+84 382020858</li>
-                    </ul>
-                </div>
-                <div class="social footer-item col-sm mb-2">
-                    <h3>Follow Us</h3>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-
-                </div>
-                <div class="product footer-item col-sm mb-2">
-                    <h3>Company Info</h3>
-                    <ul>
-                        <li><a href="./Contact.html">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                    </ul>
-                </div>
-                <div class="main-info footer-item col-sm mb-2">
-                    <h3>Purchase Info</h3>
-                    <ul>
-                        <li><a href="#">Payment Policy</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Return Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="./js/product-list.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+        <script src="./js/product-list.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

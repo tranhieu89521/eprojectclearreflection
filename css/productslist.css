@@ -88,5 +88,21 @@
 .filter{
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 5%;
+}
+.text-not-found{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 0 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    margin-top: 20%;
+}
+.text-not-found h1{
+    font-weight: 700;
+    font-family: "Galada", sans-serif;
 }
